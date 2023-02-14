@@ -1,0 +1,88 @@
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\bin\Debug\net6.0\appsettings.json
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\bin\Debug\net6.0\CI-Plateform.staticwebassets.runtime.json
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\bin\Debug\net6.0\CI-Plateform.exe
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\bin\Debug\net6.0\CI-Plateform.deps.json
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\bin\Debug\net6.0\CI-Plateform.runtimeconfig.json
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\bin\Debug\net6.0\CI-Plateform.dll
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\bin\Debug\net6.0\CI-Plateform.pdb
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.csproj.AssemblyReference.cache
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.AssemblyInfoInputs.cache
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.AssemblyInfo.cs
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.csproj.CoreCompileInputs.cache
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.RazorAssemblyInfo.cache
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.RazorAssemblyInfo.cs
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\staticwebassets\msbuild.CI-Plateform.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\staticwebassets\msbuild.build.CI-Plateform.props
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CI-Plateform.props
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CI-Plateform.props
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\scopedcss\bundle\CI-Plateform.styles.css
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\scopedcss\projectbundle\CI-Plateform.bundle.scp.css
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.dll
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\refint\CI-Plateform.dll
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.pdb
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.genruntimeconfig.cache
+C:\Users\avinash\source\repos\CI-Plateform\CI-Plateform\obj\Debug\net6.0\ref\CI-Plateform.dll
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\bin\Debug\net6.0\appsettings.Development.json
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\bin\Debug\net6.0\appsettings.json
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\bin\Debug\net6.0\CI-Plateform.staticwebassets.runtime.json
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\bin\Debug\net6.0\CI-Plateform.exe
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\bin\Debug\net6.0\CI-Plateform.deps.json
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\bin\Debug\net6.0\CI-Plateform.runtimeconfig.json
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\bin\Debug\net6.0\CI-Plateform.dll
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\bin\Debug\net6.0\CI-Plateform.pdb
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.csproj.AssemblyReference.cache
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.AssemblyInfoInputs.cache
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.AssemblyInfo.cs
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.csproj.CoreCompileInputs.cache
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.MvcApplicationPartsAssemblyInfo.cache
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.RazorAssemblyInfo.cache
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.RazorAssemblyInfo.cs
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\staticwebassets\msbuild.CI-Plateform.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\staticwebassets\msbuild.build.CI-Plateform.props
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CI-Plateform.props
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CI-Plateform.props
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\staticwebassets.pack.json
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\staticwebassets.build.json
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\staticwebassets.development.json
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\scopedcss\bundle\CI-Plateform.styles.css
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\scopedcss\projectbundle\CI-Plateform.bundle.scp.css
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.dll
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\refint\CI-Plateform.dll
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.pdb
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\CI-Plateform.genruntimeconfig.cache
+E:\Tatva CI platform\CI-Plateform\CI-Plateform\obj\Debug\net6.0\ref\CI-Plateform.dll
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\bin\Debug\net6.0\appsettings.Development.json
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\bin\Debug\net6.0\appsettings.json
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\bin\Debug\net6.0\CI-Plateform.staticwebassets.runtime.json
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\bin\Debug\net6.0\CI-Plateform.exe
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\bin\Debug\net6.0\CI-Plateform.deps.json
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\bin\Debug\net6.0\CI-Plateform.runtimeconfig.json
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\bin\Debug\net6.0\CI-Plateform.dll
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\bin\Debug\net6.0\ref\CI-Plateform.dll
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\bin\Debug\net6.0\CI-Plateform.pdb
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\CI-Plateform.csproj.AssemblyReference.cache
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\CI-Plateform.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\CI-Plateform.AssemblyInfoInputs.cache
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\CI-Plateform.AssemblyInfo.cs
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\CI-Plateform.csproj.CoreCompileInputs.cache
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\CI-Plateform.MvcApplicationPartsAssemblyInfo.cache
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\CI-Plateform.RazorAssemblyInfo.cache
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\CI-Plateform.RazorAssemblyInfo.cs
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\staticwebassets.build.json
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\staticwebassets.development.json
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\scopedcss\bundle\CI-Plateform.styles.css
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\scopedcss\projectbundle\CI-Plateform.bundle.scp.css
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\CI-Plateform.dll
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\ref\CI-Plateform.dll
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\CI-Plateform.pdb
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform\obj\Debug\net6.0\CI-Plateform.genruntimeconfig.cache
