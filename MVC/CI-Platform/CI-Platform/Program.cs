@@ -21,19 +21,19 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
+    name: "",
     pattern: "{controller=Home}/{action=login}/{id?}");
 
 app.MapControllerRoute(
-    name: "default",
+    name: "",
     pattern: "{controller=Home}/{action=Registerform}");
 
 app.MapControllerRoute(
-    name: "default",
+    name: "",
     pattern: "{controller=Home}/{action=Forgotpasswoard}");
 
 app.MapControllerRoute(
-    name: "default",
+    name: "",
     pattern: "{controller=Home}/{action=Newpasswoard}");
 
 

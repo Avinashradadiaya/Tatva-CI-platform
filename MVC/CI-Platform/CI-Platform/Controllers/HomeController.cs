@@ -18,6 +18,21 @@ namespace CI_platform.Controllers
             return View();
         }
 
+        public IActionResult Forgotpasswoard()
+        {
+            return View();
+        }
+
+        public IActionResult Newpasswoard()
+        {
+            return View();
+        }
+
+        public IActionResult Registerform()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -81,9 +81,9 @@
                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" value=".........">
                       </div>
                       <button type="button" class="login-btn mt-3 w-100">Login</button>
-                      <a class="mt-3" href="lostpassword.html" id="forgot-password">Lost your Password?</a>
+                      <a class="mt-3" asp-controller="Home" asp-action="Forgotpasswoard" id="forgot-password">Lost your Password?</a>
                       <div class="mt-3" id="create-account"> <span id="account-link-txt">Don't have an Account?</span> 
-                        <a href="#" id="account-link">Create An Account!</a>
+                        <a asp-controller="Home" asp-action="Registerform" id="account-link">Create An Account!</a>
                      </div>
                      <div id="privacy"><span id="privacy-child">Privacy Policy</span></div>
                   </form>
