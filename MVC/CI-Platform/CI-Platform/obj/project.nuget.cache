@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CGv2XXgZvmnEJiBKKjeI4Sj6dSr/MijM0T5MFBt6ZwUT1KgxU0GtIMULvxMeMbAsYXzRoUA2AcsF075DQOXoMw==",
+  "dgSpecHash": "pe0Z+pkDAV5e8Ygpm24hsPo8GPXX3OPKTOQksUGMfus6uInZ4hGur9mui2vk7XYhlxfWtQqJyI42Wkd6XalM+g==",
   "success": true,
-  "projectFilePath": "E:\\Tatva CI platform\\CI-Plateform\\CI-Plateform\\CI-Plateform.csproj",
+  "projectFilePath": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\CI-platform.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

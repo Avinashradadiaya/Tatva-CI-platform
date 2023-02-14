@@ -1,6 +1,3 @@
-using Microsoft.Extensions.FileSystemGlobbing.Internal;
-using System.Xml.Linq;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -25,21 +22,22 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Users}/{action=login}/{id?}");
-
-
+    pattern: "{controller=Home}/{action=login}/{id?}");
 
 app.MapControllerRoute(
-    name: "Users",
-    pattern: "{controller=Users}/{action=forgotpasswoard}");
+    name: "default",
+    pattern: "{controller=Home}/{action=Registerform}");
 
 app.MapControllerRoute(
-    name: "Users",
-    pattern: "{controller=Users}/{action=Newpasswoard}");
+    name: "default",
+    pattern: "{controller=Home}/{action=Forgotpasswoard}");
 
 app.MapControllerRoute(
-    name: "Users",
-    pattern: "{controller=Users}/{action=Register}");
+    name: "default",
+    pattern: "{controller=Home}/{action=Newpasswoard}");
+
+
+
+
 
 app.Run();
-

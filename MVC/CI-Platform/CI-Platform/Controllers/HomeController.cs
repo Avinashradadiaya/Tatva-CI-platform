@@ -1,8 +1,8 @@
-﻿using CI_Plateform.Models;
+﻿using CI_platform.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace CI_Plateform.Controllers
+namespace CI_platform.Controllers
 {
     public class HomeController : Controller
     {
@@ -13,15 +13,11 @@ namespace CI_Plateform.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult login()
         {
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
