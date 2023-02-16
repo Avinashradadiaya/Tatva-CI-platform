@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home Page</title>
+
+        <!-- attach a css file and bootstrap file -->
+        <link href="/HTML/css/Home.css" rel="stylesheet"/>
+        <link href="/HTML/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet"/>
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<!-- <body>
+    <header>
+        <nav class="navbar  navbar-expand-md navbar-toggleable-sm navbar-light bg-white  box-shadow   topnav ">
+            <div class="container-fluid justify-content-between">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand">
+                    <img src="./images/logo.png" alt="logo" class="ps-0 pe-3" />
+                </a>
+                <div class="dropdown u1 ">
+                    <button class="btn dropdown-toggle profile"  type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <img src="/HTML/Images/user-img.png" class="userProfile">
+                        <span>John Doe</span>
+                      </button>
+                    <ul class="dropdown-menu dropdown-menu-end userdropdown">
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Help</a></li>
+                        <li><a class="dropdown-item" href="login-page.html">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse  ">
+
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle ps-0 pe-2" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Explore
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark pe-2" asp-area="" asp-controller="Home"
+                                asp-action="Index">Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark stories me-2" asp-area="" asp-controller="Home"
+                                asp-action="Index">News</a>
+                            </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle ps-0" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Policy 
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+                
+                <div class="dropdown u2">
+                    <button class="btn dropdown-toggle profile" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <img src="/HTML/Images/user-img.png" class="userProfile">
+                        <span>John Doe</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end userdropdown">
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Help</a></li>
+                        <li><a class="dropdown-item" href="login-page.html">Logout</a></li>
+                    </ul>
+                </div>
+            
+
+            </div>
+
+        </nav>
+
+        <nav
+            class="navbar navbar-light bg-white navbar-toggleable-md navbar-expand-md border-bottom box-shadow mb-3 secondnav">
+            <div class="container-fluid justify-content-between">
+
+
+                <div class="search-bar">
+                    <i class="fa fa-search"></i>
+                    <input type="search" class="form-control form-input" placeholder="Search Mission...">
+                </div>
+                <div class="row gx-0">
+                    <div class="dropdown col drop">
+                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Country 
+                            &nbsp;
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown col drop">
+                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            City
+                            &nbsp;
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown col drop">
+                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Theme
+                            &nbsp;
+
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown col drop Skills">
+                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Skills
+                            &nbsp;
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    This script got from frontendfreecode.com -->
+<!-- <div class="container">
+    <div class="well well-sm">
+        <strong>Category Title</strong>
+        <div class="btn-group">
+            <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+            </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+                class="glyphicon glyphicon-th"></span>Grid</a>
+        </div>
+    </div>
+    <div id="products" class="row list-group">
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><a style="font-size: 8pt; text-decoration: none" target="_blank" href="http://frontendfreecode.com">Free Frontend</a>
+                                                                            
+
+</body> -->
+<div class="row header">
+    <div class="col d-flex flex-row justify-content-center">
+      <a href="#" class="mx-1 mx-sm-4">Stories</a>
+      <div class="dropdown">
+        <button
+          class="dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown">
+          Policy <img src="./Images/drop-down.png" class="mx-2" />
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col p-0">
+      <div class="dropdown">
+        <button
+          class="dropdown-toggle profile"
+          type="button"
+          data-bs-toggle="dropdown">
+          <img src="/HTML/Images/user-img.png" class="profileimg" />
+          <span class="mx-2 d-none d-sm-block">Evan Donohue</span>
+          <img
+            src="/html/Images/drop-down.png"
+            class="mx-1 drop-down d-none d-sm-block"/>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">My Profile</a></li>
+          <li><a class="dropdown-item" href="#">Help</a></li>
+          <li><a class="dropdown-item" href="login-page.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row filterrow m-0">
+    <div class="col-12 col-md-6 search-bar p-0">
+      <button type="button" class="btn">
+        <img src="/html/Images/drop-down.png" alt="search" />
+      </button>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Search mission ..."
+        aria-label="Search"/>
+    </div>
+
+    <div class="col-12 col-md-6 row p-0 m-0">
+      <div class="col-3 p-0">
+        <button class="filter" type="button" data-bs-toggle="dropdown">
+          <span class="">Country</span>
+          <img src="/html/Images/drop-down.png" class="mx-0 mx-sm-2" />
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">USA</a></li>
+          <li><a class="dropdown-item" href="#">INDIA</a></li>
+          <li><a class="dropdown-item" href="#">Canada</a></li>
+        </ul>
+      </div>
+      <div class="col-3 p-0">
+        <button class="filter" type="button" data-bs-toggle="dropdown">
+          <span class="">City</span>
+          <img src="/HTML/Images/drop-down.png" class="mx-0 mx-sm-2" />
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Mumbai</a></li>
+          <li><a class="dropdown-item" href="#">Kolkata</a></li>
+          <li><a class="dropdown-item" href="#">Chicago</a></li>
+        </ul>
+      </div>
+      <div class="col-3 p-0">
+        <button class="filter" type="button" data-bs-toggle="dropdown">
+          <span class="">Theme</span>
+          <img src="/HTML/Images/drop-down.png" class="mx-0 mx-sm-2" />
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Environment</a></li>
+          <li><a class="dropdown-item" href="#">Plantation</a></li>
+          <li><a class="dropdown-item" href="#">Education</a></li>
+        </ul>
+      </div>
+      <div class="col-3 p-0">
+        <button class="filter" type="button" data-bs-toggle="dropdown">
+          <span class="">Skill</span>
+          <img src="/HTML/Images/drop-down.png" class="mx-0 mx-sm-2" />
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Archeology</a></li>
+          <li><a class="dropdown-item" href="#">History</a></li>
+          <li><a class="dropdown-item" href="#">Astronomy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row filter-bar-row align-items-center">
+    <div class="col-auto filter-bar">
+      <span>India</span>
+      <button type="button" class="btn btn-close-search">
+        <img src="/HTML/Images/cancel.png" alt="close" />
+      </button>
+    </div>
+    <div class="col-auto filter-bar">
+      <span>Environment</span>
+      <button type="button" class="btn btn-close-search">
+        <img src="/HTML/Images/cancel.png" alt="close" />
+      </button>
+    </div>
+    <div class="col-auto filter-bar">
+      <span>Archeology</span>
+      <button type="button" class="btn btn-close-search">
+        <img src="/HTML/Images/cancel.png" alt="close" />
+      </button>
+    </div>
+
+    <div class="col-auto filter-bar">
+      <span>Jaipur</span>
+      <button type="button" class="btn btn-close-search">
+        <img src="/HTML/Images/cancel.png" alt="close" />
+      </button>
+    </div>
+    <div class="col-auto filter-bar">
+      <span>Tree Plantation</span>
+      <button type="button" class="btn btn-close-search">
+        <img src="/HTML/Images/cancel.png" alt="close" />
+      </button>
+    </div>
+    <div class="col-auto filter-bar">
+      <span>Nutriton</span>
+      <button type="button" class="btn btn-close-search">
+        <img src="/HTML/Images/cancel.png" alt="close" />
+      </button>
+    </div>
+
+    <div class="col-auto filter-bar">
+      <span>Toronto</span>
+      <button type="button" class="btn btn-close-search">
+        <img src="/HTML/Images/cancel.png" alt="close" />
+      </button>
+    </div>
+
+    <div class="col-auto">
+      <button type="button" class="btn btn-close-search clr-btn">
+        Clear all
+      </button>
+    </div>
+  </div>
+
+  <div class="row explore">
+     <div class="col">
+      <h2>Explore <strong>72 Missions</strong></h2>
+      </div>
+    
+    <div class="col d-flex flex-row justify-content-end">
+        <div class="p-0 d-flex flex-row me-4">
+            <button class="sortby" type="button" data-bs-toggle="dropdown">
+              <span class="">Sort by</span>
+              <img src="/HTML//Images/drop-down.png" class="mx-0 mx-sm-2" />
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">USA</a></li>
+              <li><a class="dropdown-item" href="#">INDIA</a></li>
+              <li><a class="dropdown-item" href="#">Canada</a></li>
+            </ul>
+        </div>
+      
+        <div class="form-check form-check-inline ">
+      
+            <input class="form-check-input gridbtn" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+           
+          </div>
+         
+          <div class="form-check form-check-inline">
+            <input class="form-check-input listbtn" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+           
+          </div>
+
+
+    </div>
+  </div></div>
+</html>
