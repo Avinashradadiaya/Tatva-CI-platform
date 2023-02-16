@@ -39,6 +39,9 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "",
     pattern: "{controller=Home}/{action=Newpasswoard}");
+app.MapControllerRoute(
+    name: "",
+    pattern: "{controller=Home}/{action=Home}");
 
 
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Iy6ZmQ7j+BdmUfNsbgYDJ1lAUpuBHzBx7uzTQE+0jj0=",
+  "Hash": "OdnJKQHZL9Uq6NHbxlRmquiC9XzWG2f2pXf+I9f+jEc=",
   "Source": "CI-platform",
   "BasePath": "_content/CI-platform",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CI-platform.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\wwwroot\\css\\Home.css",
+      "SourceId": "CI-platform",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\wwwroot\\",
+      "BasePath": "_content/CI-platform",
+      "RelativePath": "css/Home.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Home.css"
     },
     {
       "Identity": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\wwwroot\\css\\site.css",
