@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Home Page</title>
 
-        <!-- attach a css file and bootstrap file -->
-        <link href="/HTML/css/Home.css" rel="stylesheet"/>
-        <link href="/HTML/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet"/>
-        
-        <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- attach a css file and bootstrap file -->
+    
+    <link href="/HTML/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/HTML/css/Home.css" rel="stylesheet" />
+    <!-- attach a JS file -->
+    <script src="/HTML/js/Home.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </head>
-<!-- <body>
+
+<body>
     <header>
         <nav class="navbar  navbar-expand-md navbar-toggleable-sm navbar-light bg-white  box-shadow   topnav ">
             <div class="container-fluid justify-content-between">
@@ -21,32 +25,17 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand">
-                    <img src="./images/logo.png" alt="logo" class="ps-0 pe-3" />
-                </a>
-                <div class="dropdown u1 ">
-                    <button class="btn dropdown-toggle profile"  type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                <div class="navbar-collapse collapse">
 
-                        <img src="/HTML/Images/user-img.png" class="userProfile">
-                        <span>John Doe</span>
-                      </button>
-                    <ul class="dropdown-menu dropdown-menu-end userdropdown">
-                        <li><a class="dropdown-item" href="#">My Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Help</a></li>
-                        <li><a class="dropdown-item" href="login-page.html">Logout</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-collapse collapse  ">
+                    <ul class="navbar-nav flex-grow-1 ">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark me-2" asp-area="" asp-controller="Home" asp-action="Index"
+                                href="#">Stories</a>
+                        </li>
 
-                    <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <div class="dropdown">
-                                <button class="btn dropdown-toggle ps-0 pe-2" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Explore
-                                </button>
-
+                                <button class="btn dropdown-toggle ps-0" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Policy </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -54,37 +43,10 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark pe-2" asp-area="" asp-controller="Home"
-                                asp-action="Index">Stories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark stories me-2" asp-area="" asp-controller="Home"
-                                asp-action="Index">News</a>
-                            </li>
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle ps-0" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Policy 
-                                </button>
-
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
                     </ul>
-
                 </div>
-                
                 <div class="dropdown u2">
-                    <button class="btn dropdown-toggle profile" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-
+                    <button class="btn dropdown-toggle profile" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="/HTML/Images/user-img.png" class="userProfile">
                         <span>John Doe</span>
                     </button>
@@ -93,8 +55,9 @@
                         <li><a class="dropdown-item" href="#">Help</a></li>
                         <li><a class="dropdown-item" href="login-page.html">Logout</a></li>
                     </ul>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
-            
+
 
             </div>
 
@@ -103,19 +66,13 @@
         <nav
             class="navbar navbar-light bg-white navbar-toggleable-md navbar-expand-md border-bottom box-shadow mb-3 secondnav">
             <div class="container-fluid justify-content-between">
-
-
                 <div class="search-bar">
                     <i class="fa fa-search"></i>
                     <input type="search" class="form-control form-input" placeholder="Search Mission...">
                 </div>
                 <div class="row gx-0">
                     <div class="dropdown col drop">
-                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Country 
-                            &nbsp;
-                        </button>
+                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Country </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -123,24 +80,15 @@
                         </ul>
                     </div>
                     <div class="dropdown col drop">
-                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            City
-                            &nbsp;
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown" aria-expanded="false"> City </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                     </div>
                     <div class="dropdown col drop">
-                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Theme
-                            &nbsp;
-
-                        </button>
+                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Them </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -148,345 +96,588 @@
                         </ul>
                     </div>
                     <div class="dropdown col drop Skills">
-                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Skills
-                            &nbsp;
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Skills </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+
                     </div>
                 </div>
             </div>
         </nav>
 
     </header>
-    This script got from frontendfreecode.com -->
-<!-- <div class="container">
-    <div class="well well-sm">
-        <strong>Category Title</strong>
-        <div class="btn-group">
-            <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
-            </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
-                class="glyphicon glyphicon-th"></span>Grid</a>
-        </div>
-    </div>
-    <div id="products" class="row list-group">
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Product title</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Product title</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Product title</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Product title</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Product title</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="http://frontendfreecode.com/codes/files/400x250.png" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Product title</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.000</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div><a style="font-size: 8pt; text-decoration: none" target="_blank" href="http://frontendfreecode.com">Free Frontend</a>
-                                                                            
 
-</body> -->
-<div class="row header">
-    <div class="col d-flex flex-row justify-content-center">
-      <a href="#" class="mx-1 mx-sm-4">Stories</a>
-      <div class="dropdown">
-        <button
-          class="dropdown-toggle"
-          type="button"
-          data-bs-toggle="dropdown">
-          Policy <img src="./Images/drop-down.png" class="mx-2" />
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col p-0">
-      <div class="dropdown">
-        <button
-          class="dropdown-toggle profile"
-          type="button"
-          data-bs-toggle="dropdown">
-          <img src="/HTML/Images/user-img.png" class="profileimg" />
-          <span class="mx-2 d-none d-sm-block">Evan Donohue</span>
-          <img
-            src="/html/Images/drop-down.png"
-            class="mx-1 drop-down d-none d-sm-block"/>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">My Profile</a></li>
-          <li><a class="dropdown-item" href="#">Help</a></li>
-          <li><a class="dropdown-item" href="login-page.html">Logout</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
-  <div class="row filterrow m-0">
-    <div class="col-12 col-md-6 search-bar p-0">
-      <button type="button" class="btn">
-        <img src="/html/Images/drop-down.png" alt="search" />
-      </button>
-      <input
-        class="form-control"
-        type="text"
-        placeholder="Search mission ..."
-        aria-label="Search"/>
-    </div>
+</body>
 
-    <div class="col-12 col-md-6 row p-0 m-0">
-      <div class="col-3 p-0">
-        <button class="filter" type="button" data-bs-toggle="dropdown">
-          <span class="">Country</span>
-          <img src="/html/Images/drop-down.png" class="mx-0 mx-sm-2" />
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">USA</a></li>
-          <li><a class="dropdown-item" href="#">INDIA</a></li>
-          <li><a class="dropdown-item" href="#">Canada</a></li>
-        </ul>
-      </div>
-      <div class="col-3 p-0">
-        <button class="filter" type="button" data-bs-toggle="dropdown">
-          <span class="">City</span>
-          <img src="/HTML/Images/drop-down.png" class="mx-0 mx-sm-2" />
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Mumbai</a></li>
-          <li><a class="dropdown-item" href="#">Kolkata</a></li>
-          <li><a class="dropdown-item" href="#">Chicago</a></li>
-        </ul>
-      </div>
-      <div class="col-3 p-0">
-        <button class="filter" type="button" data-bs-toggle="dropdown">
-          <span class="">Theme</span>
-          <img src="/HTML/Images/drop-down.png" class="mx-0 mx-sm-2" />
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Environment</a></li>
-          <li><a class="dropdown-item" href="#">Plantation</a></li>
-          <li><a class="dropdown-item" href="#">Education</a></li>
-        </ul>
-      </div>
-      <div class="col-3 p-0">
-        <button class="filter" type="button" data-bs-toggle="dropdown">
-          <span class="">Skill</span>
-          <img src="/HTML/Images/drop-down.png" class="mx-0 mx-sm-2" />
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Archeology</a></li>
-          <li><a class="dropdown-item" href="#">History</a></li>
-          <li><a class="dropdown-item" href="#">Astronomy</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<!-- filterr code -->
 
-  <div class="row filter-bar-row align-items-center">
+<div class="row filter-bar-row align-items-center">
     <div class="col-auto filter-bar">
-      <span>India</span>
-      <button type="button" class="btn btn-close-search">
-        <img src="/HTML/Images/cancel.png" alt="close" />
-      </button>
+        <span>India</span>
+        <button type="button" class="btn btn-close-search">
+            <img src="/HTML/Images/cancel.png" alt="close" />
+        </button>
     </div>
     <div class="col-auto filter-bar">
-      <span>Environment</span>
-      <button type="button" class="btn btn-close-search">
-        <img src="/HTML/Images/cancel.png" alt="close" />
-      </button>
+        <span>Environment</span>
+        <button type="button" class="btn btn-close-search">
+            <img src="/HTML/Images/cancel.png" alt="close" />
+        </button>
     </div>
     <div class="col-auto filter-bar">
-      <span>Archeology</span>
-      <button type="button" class="btn btn-close-search">
-        <img src="/HTML/Images/cancel.png" alt="close" />
-      </button>
+        <span>Archeology</span>
+        <button type="button" class="btn btn-close-search">
+            <img src="/HTML/Images/cancel.png" alt="close" />
+        </button>
     </div>
 
     <div class="col-auto filter-bar">
-      <span>Jaipur</span>
-      <button type="button" class="btn btn-close-search">
-        <img src="/HTML/Images/cancel.png" alt="close" />
-      </button>
+        <span>Jaipur</span>
+        <button type="button" class="btn btn-close-search">
+            <img src="/HTML/Images/cancel.png" alt="close" />
+        </button>
     </div>
     <div class="col-auto filter-bar">
-      <span>Tree Plantation</span>
-      <button type="button" class="btn btn-close-search">
-        <img src="/HTML/Images/cancel.png" alt="close" />
-      </button>
+        <span>Tree Plantation</span>
+        <button type="button" class="btn btn-close-search">
+            <img src="/HTML/Images/cancel.png" alt="close" />
+        </button>
     </div>
     <div class="col-auto filter-bar">
-      <span>Nutriton</span>
-      <button type="button" class="btn btn-close-search">
-        <img src="/HTML/Images/cancel.png" alt="close" />
-      </button>
+        <span>Nutriton</span>
+        <button type="button" class="btn btn-close-search">
+            <img src="/HTML/Images/cancel.png" alt="close" />
+        </button>
     </div>
 
     <div class="col-auto filter-bar">
-      <span>Toronto</span>
-      <button type="button" class="btn btn-close-search">
-        <img src="/HTML/Images/cancel.png" alt="close" />
-      </button>
+        <span>Toronto</span>
+        <button type="button" class="btn btn-close-search">
+            <img src="/HTML/Images/cancel.png" alt="close" />
+        </button>
     </div>
 
     <div class="col-auto">
-      <button type="button" class="btn btn-close-search clr-btn">
-        Clear all
-      </button>
+        <button type="button" class="btn btn-close-search clr-btn">
+            Clear all
+        </button>
     </div>
-  </div>
+</div>
 
-  <div class="row explore">
-     <div class="col">
-      <h2>Explore <strong>72 Missions</strong></h2>
-      </div>
-    
-    <div class="col d-flex flex-row justify-content-end">
+<div class="row explore">
+    <div class="col">
+        <h2>Explore <strong>72 Missions</strong></h2>
+    </div>
+
+    <div class="col d-flex flex-row justify-content-end ps-5">
         <div class="p-0 d-flex flex-row me-4">
             <button class="sortby" type="button" data-bs-toggle="dropdown">
-              <span class="">Sort by</span>
-              <img src="/HTML//Images/drop-down.png" class="mx-0 mx-sm-2" />
+                <span class="">Sort by</span>
+                <img src="/HTML//Images/drop-down.png" class="mx-0 mx-sm-2" />
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">USA</a></li>
-              <li><a class="dropdown-item" href="#">INDIA</a></li>
-              <li><a class="dropdown-item" href="#">Canada</a></li>
+                <li><a class="dropdown-item" href="#">USA</a></li>
+                <li><a class="dropdown-item" href="#">INDIA</a></li>
+                <li><a class="dropdown-item" href="#">Canada</a></li>
             </ul>
         </div>
-      
-        <div class="form-check form-check-inline ">
-      
-            <input class="form-check-input gridbtn" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-           
+        <div class="container">
+            <button class="btn btn-primary btn-grid"><img src="/HTML/Images/grid.png"/></button>
+            <button class="btn btn-danger btn-list"><img src="/html/Images/list.png"/></button>
+          </div>
+    </div>
+</div>
+
+
+<!-- Card list and Gride view -->
+
+
+
+  <div class="container grid-container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="location over-buttons px-3 py-1">
+                <img src="/HTML/Images/pin.png" />
+                <span>Toronto</span>
+            </div>
+          <img class="card-img-top" src="/HTML/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="Card image cap">
+          <div class="d-flex justify-content-center">
+            <p class="Title"> Environment</p>
           </div>
          
-          <div class="form-check form-check-inline">
-            <input class="form-check-input listbtn" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-           
+          <div class="card-body">
+            <h4 class="card-title">Grow Trees - On the path to encironment susatainability</h4>
+            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore...</p>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h6>CSE Netwoark</h6>
+                </div>
+                <div>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/star.png"/>
+                    <img src="/html/images/star.png"/>
+                </div>
+
+            </div>
+            <div class="border-top border-bottom mt-4">
+                <div class="justify-content-center d-flex"><p class="Title-1">From 10/01/2019 until 25/02/2019   </p></div>
+                <div class="d-flex justify-content-between ps-4 pe-4" >
+                    <div class="d-flex justify-content-between">
+                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                        <div class="mx-2">
+                            <p class="mb-0 ">10</p>
+                            <p>Seatf Left</p>
+                        </div>
+                    </div>
+                  
+                    <div class="d-flex justify-content-between">
+                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
+                        <div class="mx-2">
+                            <p class="mb-0 ">09/01/2019</p>
+                            <p>deadline</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center mt-3 ">
+                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
+                    <img src="/html/Images/right-arrow.png"/>
+                </button>
+                
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="location over-buttons px-3 py-1">
+                <img src="/HTML/Images/pin.png" />
+                <span>Toronto</span>
+            </div>
+          <img class="card-img-top" src="/HTML/Images/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png" alt="Card image cap">
+          <div class="d-flex justify-content-center">
+            <p class="Title"> Children</p>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Education Supplies for Every Pair of Shoes Sold</h4>
+            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore...</p>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h6>CSE Netwoark</h6>
+                </div>
+                <div>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/star.png"/>
+                    <img src="/html/images/star.png"/>
+                </div>
+
+            </div>
+            <div class="border-top border-bottom mt-4">
+                <div class="justify-content-center d-flex"><p class="Title-1">From 10/01/2019 until 25/02/2019</p></div>
+                <div class="d-flex justify-content-between ps-4 pe-4" >
+                    <div class="d-flex justify-content-between">
+                        <img class="Seats-left" src="/HTML/Images/Already-volunteered.png" alt="">
+                        <div class="mx-2">
+                            <p class="mb-0 ">250</p>
+                            <p>Seatf Left</p>
+                        </div>
+                    </div>
+                  
+                    <div class="d-flex justify-content-between">
+                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
+                        <div class="mx-2">
+                            <p class="mb-0 ">09/01/2019</p>
+                            <p>deadline</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center mt-3 ">
+                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
+                    <img src="/html/Images/right-arrow.png"/>
+                </button>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="location over-buttons px-3 py-1">
+                <img src="/HTML/Images/pin.png" />
+                <span>Toronto</span>
+            </div>
+          <img class="card-img-top" src="/HTML/Images/Nourish-the-Children-in--African-country-1.png" alt="Card image cap">
+          <div class="d-flex justify-content-center">
+            <p class="Title"> Nutriton</p>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Nourish the Children in African country</h4>
+            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore....</p>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h6>CSE Netwoark</h6>
+                </div>
+                <div>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/star.png"/>
+                    <img src="/html/images/star.png"/>
+                </div>
+
+            </div>
+            <div class="border-top border-bottom mt-4">
+                <div class="justify-content-center d-flex"><p class="Title-1">Ongoing Opportunity</p></div>
+                <div class="d-flex justify-content-between ps-4 pe-4" >
+                    <div class="d-flex justify-content-between">
+                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                        <div class="mx-2">
+                            <p class="mb-0 ">10</p>
+                            <p>Seatf Left</p>
+                        </div>
+                    </div>
+                  
+                    <div class="d-flex justify-content-between">
+                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
+                        <div class="mx-2">
+                            <p class="mb-0 ">09/01/2019</p>
+                            <p>deadline</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center mt-3 ">
+                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
+                    <img src="/html/Images/right-arrow.png"/>
+                </button>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="location over-buttons px-3 py-1">
+                <img src="/HTML/Images/pin.png" />
+                <span>Toronto</span>
+            </div>
+          <img class="card-img-top" src="\HTML\Images\CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png" alt="Card image cap">
+          <div class="d-flex justify-content-center">
+            <p class="Title">Environment</p>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">CSR initiative stands for Coffee and Farmer Equity</h4>
+            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore...</p>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h6>CSE Netwoark</h6>
+                </div>
+                <div>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/star.png"/>
+                    <img src="/html/images/star.png"/>
+                </div>
+
+            </div>
+            <div class="border-top border-bottom mt-4">
+                <div class="justify-content-center d-flex"><p class="Title-1 ">Ongoing Opportunity</p></div>
+                <div class="d-flex justify-content-between ps-4 pe-4" >
+                    <div class="d-flex justify-content-between">
+                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                        <div class="mx-2">
+                            <p class="mb-0 ">250</p>
+                            <p>Already-volunteered</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center mt-3 ">
+                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
+                    <img src="/html/Images/right-arrow.png"/>
+                </button>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="location over-buttons px-3 py-1">
+                <img src="/HTML/Images/pin.png" />
+                <span>Toronto</span>
+            </div>
+          <img class="card-img-top" src="/HTML/Images/Animal-welfare-&-save-birds-campaign.png" alt="Card image cap">
+          <div class="d-flex justify-content-center">
+            <p class="Title"> Animal</p>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Animal welfare & save birds campaing</h4>
+            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore...</p>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h6>CSE Netwoark</h6>
+                </div>
+                <div>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/star.png"/>
+                    <img src="/html/images/star.png"/>
+                </div>
+
+            </div>
+            <div class="border-top border-bottom mt-4">
+                <div class="justify-content-center d-flex"><p class="Title-1 ">Plant 10,000 Trees</p></div>
+                <div class="d-flex justify-content-between ps-4 pe-4" >
+                    <div class="d-flex justify-content-between">
+                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                        <div class="mx-2">
+                            <p class="mb-0 ">10</p>
+                            <p>Seatf Left</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/html/images/right-arrow.png"/>
+                        <p> 8000 achieved</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center mt-3 ">
+                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
+                    <img src="/html/Images/right-arrow.png"/>
+                </button>
+                
+            </div>
           </div>
 
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="location over-buttons px-3 py-1">
+                <img src="/HTML/Images/pin.png" />
+                <span>Toronto</span>
+            </div>
+          <img class="card-img-top" src="/HTML/Images/Plantation-and-Afforestation-programme.png" alt="Card image cap">
+          <div class="d-flex justify-content-center">
+            <p class="Title"> Health</p>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Plantation and Afforestation programme</h4>
+            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore....</p>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h6>CSE Netwoark</h6>
+                </div>
+                <div>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/star.png"/>
+                    <img src="/html/images/star.png"/>
+                </div>
+
+            </div>
+            <div class="border-top border-bottom mt-4">
+                <div class="justify-content-center d-flex"><p class="Title-1 ">Plant 10,000 Trees</p></div>
+                <div class="d-flex justify-content-between ps-4 pe-4" >
+                    <div class="">
+                        <img src="/HTML/Images/achieved.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/html/images/right-arrow.png"/>
+                        <p> 8000 achieved</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center mt-3 ">
+                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
+                    <img src="/html/Images/right-arrow.png"/>
+                </button>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="location over-buttons px-3 py-1">
+                <img src="/HTML/Images/pin.png" />
+                <span>Toronto</span>
+            </div>
+          <img class="card-img-top" src="/HTML/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="Card image cap">
+          <div class="d-flex justify-content-center">
+            <p class="Title"> Environment</p>
+          </div>
+
+          <div class="card-body">
+            <h4 class="card-title">Grow Trees - On the path to encironment susatainability</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit...</p>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h6>CSE Netwoark</h6>
+                </div>
+                <div>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/star.png"/>
+                    <img src="/html/images/star.png"/>
+                </div>
+
+            </div>
+            <div class="border-top border-bottom mt-4">
+                <div class="justify-content-center d-flex"></div>
+                <div class="d-flex justify-content-between ps-4 pe-4" >
+                    
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center mt-3 ">
+                <button class="Apply-btn p-2 ps-3 pe-3" > View details
+                    <img src="/html/Images/right-arrow.png"/>
+                </button>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="location over-buttons px-3 py-1">
+                <img src="/HTML/Images/pin.png" />
+                <span>Toronto</span>
+            </div>
+          <img class="card-img-top" src="/HTML/Images/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png" alt="Card image cap">
+          <div class="d-flex justify-content-center">
+            <p class="Title"> Children</p>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Education Supplies for Every Pair of Shoes Sold</h4>
+            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore....</p>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h6>CSE Netwoark</h6>
+                </div>
+                <div>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/star.png"/>
+                    <img src="/html/images/star.png"/>
+                </div>
+
+            </div>
+            <div class="border-top border-bottom mt-4">
+                <div class="justify-content-center d-flex"><p class="Title-1 ">From 10/01/2019 until 25/02/2019</p></div>
+                <div class="d-flex justify-content-between ps-4 pe-4" >
+                    <div class="d-flex justify-content-between">
+                        <img class="Seats-left" src="/HTML/Images/Already-volunteered.png" alt="">
+                        <div class="mx-2">
+                            <p class="mb-0 ">250</p>
+                            <p>Seatf Left</p>
+                        </div>
+                    </div>
+                  
+                    <div class="d-flex justify-content-between">
+                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
+                        <div class="mx-2">
+                            <p class="mb-0 ">09/01/2019</p>
+                            <p>deadline</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center mt-3 ">
+                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
+                    <img src="/html/Images/right-arrow.png"/>
+                </button>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="location over-buttons px-3 py-1">
+                <img src="/HTML/Images/pin.png" />
+                <span>Toronto</span>
+            </div>
+          <img class="card-img-top" src="/HTML/Images/Nourish-the-Children-in--African-country-1.png" alt="Card image cap">
+          <div class="d-flex justify-content-center">
+            <p class="Title"> Nutriton</p>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Nourish the Children in African country</h4>
+            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore...</p>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h6>CSE Netwoark</h6>
+                </div>
+                <div>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/selected-star.png"/>
+                    <img src="/html/images/star.png"/>
+                    <img src="/html/images/star.png"/>
+                </div>
+
+            </div>
+            <div class="border-top border-bottom mt-4">
+                <div class="justify-content-center d-flex"><p class="Title-1 ">Ongoing Opportunity</p></div>
+                <div class="d-flex justify-content-between ps-4 pe-4" >
+                    <div class="d-flex justify-content-between">
+                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                        <div class="mx-2">
+                            <p class="mb-0 ">10</p>
+                            <p>Seatf Left</p>
+                        </div>
+                    </div>
+                  
+                    <div class="d-flex justify-content-between">
+                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
+                        <div class="mx-2">
+                            <p class="mb-0 ">09/01/2019</p>
+                            <p>deadline</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center mt-3 ">
+                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
+                    <img src="/html/Images/right-arrow.png"/>
+                </button>
+                
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
-  </div></div>
+    
+  </div>
+</div>
+
 </html>
