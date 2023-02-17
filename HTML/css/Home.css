@@ -216,6 +216,20 @@ color: #F88634;
     opacity: 0.5;
   color: white;
 }
+.like {
+  position: absolute;
+  top: 150px;
+  right: 15px;
+  height: 35px;
+  width: fit-content;
+  border-radius: 18px;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+  color: white;
+}
+.card{
+  position: relative;
+}
  
 
  
