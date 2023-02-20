@@ -8,684 +8,1343 @@
     <title> Home Page</title>
 
     <!-- attach a css file and bootstrap file -->
-    
+
     <link href="/HTML/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/HTML/css/Home.css" rel="stylesheet" />
     <!-- attach a JS file -->
-    <script src="/HTML/js/Home.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+
+  
 </head>
 
 <body>
-    <header>
-        <nav class="navbar  navbar-expand-md navbar-toggleable-sm navbar-light bg-white  box-shadow   topnav ">
-            <div class="container-fluid justify-content-between">
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                    data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse">
+    <nav class="navbar  navbar-expand-md navbar-toggleable-sm navbar-light bg-white  box-shadow   topnav ">
+        <div class="container-fluid justify-content-start">
 
-                    <ul class="navbar-nav flex-grow-1 ">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark me-2" asp-area="" asp-controller="Home" asp-action="Index"
-                                href="#">Stories</a>
-                        </li>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand ms-4">
+                <img src="./images/logo.png" alt="logo" class="ps-0 pe-3" />
+            </a>
 
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle ps-0" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Policy </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="dropdown u2">
-                    <button class="btn dropdown-toggle profile" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="/HTML/Images/user-img.png" class="userProfile">
-                        <span>John Doe</span>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end userdropdown">
-                        <li><a class="dropdown-item" href="#">My Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Help</a></li>
-                        <li><a class="dropdown-item" href="login-page.html">Logout</a></li>
-                    </ul>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </div>
+            <div class="navbar-collapse collapse  ">
 
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle ps-0 pe-2" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Explore
+                                <img src="./images/drop-down.png" class="ic-down">
+                            </button>
 
-            </div>
-
-        </nav>
-
-        <nav
-            class="navbar navbar-light bg-white navbar-toggleable-md navbar-expand-md border-bottom box-shadow mb-3 secondnav">
-            <div class="container-fluid justify-content-between">
-                <div class="search-bar">
-                    <i class="fa fa-search"></i>
-                    <input type="search" class="form-control form-input" placeholder="Search Mission...">
-                </div>
-                <div class="row gx-0">
-                    <div class="dropdown col drop">
-                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Country </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown col drop">
-                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown" aria-expanded="false"> City </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
-                    </div>
-                    <div class="dropdown col drop">
-                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Them </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown col drop Skills">
-                        <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Skills </button>
-                            <ul class="dropdown-menu dropdown-menu-end">
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark pe-2" asp-area="" asp-controller="Home"
+                            asp-action="Index">Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark stories me-2" asp-area="" asp-controller="Home"
+                            asp-action="Index">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle ps-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Policy
+                                <img src="./images/drop-down.png" class="ic-down">
+                            </button>
+
+                            <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="dropdown u2">
+                <button class="btn dropdown-toggle profile" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <img src="./images/user-img.png" class="userProfile">
+                    <span>John Doe</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end userdropdown">
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Help</a></li>
+                    <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </nav>
+
+    <nav class="navbar navbar-light bg-white navbar-toggleable-md navbar-expand-md border-bottom shadow mb-3 secondnav">
+        <div class="container-fluid justify-content-between">
+
+
+            <div class="search-bar">
+                <i class="fa fa-search"></i>
+                <input type="search" class="form-control form-input" placeholder="Search Mission...">
+
+            </div>
+
+            <div class="row gx-0">
+                <div class="dropdown col">
+                    <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Country
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col">
+                    <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        City
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col">
+                    <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Theme
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col">
+                    <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Skills
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- filter code -->
+
+    <div class="row filter-bar-row align-items-center">
+        <div class="col-auto filter-bar">
+            <span>India</span>
+            <button type="button" class="btn btn-close-search">
+                <img src="/HTML/Images/cancel.png" alt="close" />
+            </button>
+        </div>
+        <div class="col-auto filter-bar">
+            <span>Environment</span>
+            <button type="button" class="btn btn-close-search">
+                <img src="/HTML/Images/cancel.png" alt="close" />
+            </button>
+        </div>
+        <div class="col-auto filter-bar">
+            <span>Archeology</span>
+            <button type="button" class="btn btn-close-search">
+                <img src="/HTML/Images/cancel.png" alt="close" />
+            </button>
+        </div>
+
+        <div class="col-auto filter-bar">
+            <span>Jaipur</span>
+            <button type="button" class="btn btn-close-search">
+                <img src="/HTML/Images/cancel.png" alt="close" />
+            </button>
+        </div>
+        <div class="col-auto filter-bar">
+            <span>Tree Plantation</span>
+            <button type="button" class="btn btn-close-search">
+                <img src="/HTML/Images/cancel.png" alt="close" />
+            </button>
+        </div>
+        <div class="col-auto filter-bar">
+            <span>Nutriton</span>
+            <button type="button" class="btn btn-close-search">
+                <img src="/HTML/Images/cancel.png" alt="close" />
+            </button>
+        </div>
+
+        <div class="col-auto filter-bar">
+            <span>Toronto</span>
+            
+            <button type="button" class="btn btn-close-search">
+                <img src="/HTML/Images/cancel.png" alt="close" />
+            </button>
+        </div>
+
+        <div class="col-auto">
+            <button type="button" class="btn btn-close-search clr-btn">
+                Clear all
+            </button>
+        </div>
+    </div>
+
+    <div class=" container justify-content-between d-flex pt-3">
+        <div class="">
+            <h3 class="text-muted">Explore <strong class="text-dark"> 72 Mission</strong></h3>
+
+        </div>
+        <div class="row d-flex">
+            <div class="dropdown col ">
+                <button class="btn dropdown-toggle ps-0 border-dark ps-3" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"> Sort By </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-outline-light btn-grid col" id="grid" onclick="gridView()">
+                <img src="./images/grid.png">
+            </button>
+            <button class="btn btn-outline-light btn-list col " id="list" onclick="listView()">
+                <img src="./images/list.png">
+            </button>
+
+        </div>
+    </div>
+
+
+    <!-- Card list and Gride view -->
+
+    <div>
+
+
+        <div class="container  grid-container mt-5" id="mission-grid-view">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card ">
+                        <div class="location over-buttons px-3 py-1 ">
+                            <img src="/HTML/Images/pin.png" />
+                            <span>Toronto</span>
+                        </div>
+                        <div class="like over-buttons px-3 py-1">
+                            <img src="/HTML/Images/heart.png" />
+
+                        </div>
+                        <div class="user over-buttons px-3 py-1">
+                            <img src="/HTML/Images/user.png" />
+
+                        </div>
+
+                        <img class="card-img-top"
+                            src="/HTML/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
+                            alt="Card image cap">
+                        <div class="d-flex justify-content-center">
+                            <p class="Title"> Environment</p>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Grow Trees - On the path to encironment susatainability</h5>
+                            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd
+                                tempor incididunt ut labore...</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h6>CSE Netwoark</h6>
+                                </div>
+                                <div>
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/star.png" />
+                                    <img src="/html/images/star.png" />
+                                </div>
+
+                            </div>
+                            <div class="border-top border-bottom mt-4">
+                                <div class="justify-content-center d-flex">
+                                    <p class="Title-1">From 10/01/2019 until 25/02/2019 </p>
+                                </div>
+                                <div class="d-flex justify-content-between ps-4 pe-4">
+                                    <div class="d-flex justify-content-between">
+                                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                                        <div class="mx-2">
+                                            <p class="mb-0 ">10</p>
+                                            <p>Seatf Left</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
+                                        <div class="mx-2">
+                                            <p class="mb-0 ">09/01/2019</p>
+                                            <p>deadline</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 ">
+                                <button class="Apply-btn p-2 ps-3 pe-3"> Apply <img
+                                        src="/html/Images/right-arrow.png" /> </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="location over-buttons px-3 py-1">
+                            <img src="/HTML/Images/pin.png" />
+                            <span>Toronto</span>
+                        </div>
+                        <div class="like over-buttons px-3 py-1">
+                            <img src="/HTML/Images/heart.png" />
+
+                        </div>
+                        <div class="user over-buttons px-3 py-1">
+                            <img src="/HTML/Images/user.png" />
+
+                        </div>
+                        <img class="card-img-top"
+                            src="/HTML/Images/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png"
+                            alt="Card image cap">
+                        <div class="d-flex justify-content-center">
+                            <p class="Title"> Children</p>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Education Supplies for Every Pair of Shoes Sold</h4>
+                            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd
+                                tempor incididunt ut labore...</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h6>CSE Netwoark</h6>
+                                </div>
+                                <div>
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/star.png" />
+                                    <img src="/html/images/star.png" />
+                                </div>
+
+                            </div>
+                            <div class="border-top border-bottom mt-4">
+                                <div class="justify-content-center d-flex">
+                                    <p class="Title-1">From 10/01/2019 until 25/02/2019</p>
+                                </div>
+                                <div class="d-flex justify-content-between ps-4 pe-4">
+                                    <div class="d-flex justify-content-between">
+                                        <img class="Seats-left" src="/HTML/Images/Already-volunteered.png" alt="">
+                                        <div class="mx-2">
+                                            <p class="mb-0 ">250</p>
+                                            <p>Seatf Left</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
+                                        <div class="mx-2">
+                                            <p class="mb-0 ">09/01/2019</p>
+                                            <p>deadline</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 ">
+                                <button class="Apply-btn p-2 ps-3 pe-3"> Apply <img
+                                        src="/html/Images/right-arrow.png" /> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="location over-buttons px-3 py-1">
+                            <img src="/HTML/Images/pin.png" />
+                            <span>Toronto</span>
+                            <div class="like over-buttons px-3 py-1">
+                                <img src="/HTML/Images/heart.png" />
+    
+                            </div>
+                            <div class="user over-buttons px-3 py-1">
+                                <img src="/HTML/Images/user.png" />
+    
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="/HTML/Images/Nourish-the-Children-in--African-country-1.png"
+                            alt="Card image cap">
+                        <div class="d-flex justify-content-center">
+                            <p class="Title"> Nutriton</p>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Nourish the Children in African country</h4>
+                            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd
+                                tempor incididunt ut labore....</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h6>CSE Netwoark</h6>
+                                </div>
+                                <div>
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/star.png" />
+                                    <img src="/html/images/star.png" />
+                                </div>
+
+                            </div>
+                            <div class="border-top border-bottom mt-4">
+                                <div class="justify-content-center d-flex">
+                                    <p class="Title-1">Ongoing Opportunity</p>
+                                </div>
+                                <div class="d-flex justify-content-between ps-4 pe-4">
+                                    <div class="d-flex justify-content-between">
+                                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                                        <div class="mx-2">
+                                            <p class="mb-0 ">10</p>
+                                            <p>Seatf Left</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
+                                        <div class="mx-2">
+                                            <p class="mb-0 ">09/01/2019</p>
+                                            <p>deadline</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 ">
+                                <button class="Apply-btn p-2 ps-3 pe-3"> Apply <img
+                                        src="/html/Images/right-arrow.png" /> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="location over-buttons px-3 py-1">
+                            <img src="/HTML/Images/pin.png" />
+                            <span>Toronto</span>
+                            <div class="like over-buttons px-3 py-1">
+                                <img src="/HTML/Images/heart.png" />
+    
+                            </div>
+                            <div class="user over-buttons px-3 py-1">
+                                <img src="/HTML/Images/user.png" />
+    
+                            </div>
+                        </div>
+                        <img class="card-img-top"
+                            src="\HTML\Images\CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png"
+                            alt="Card image cap">
+                        <div class="d-flex justify-content-center">
+                            <p class="Title">Environment</p>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">CSR initiative stands for Coffee and Farmer Equity</h4>
+                            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd
+                                tempor incididunt ut labore...</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h6>CSE Netwoark</h6>
+                                </div>
+                                <div>
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/star.png" />
+                                    <img src="/html/images/star.png" />
+                                </div>
+
+                            </div>
+                            <div class="border-top border-bottom mt-4">
+                                <div class="justify-content-center d-flex">
+                                    <p class="Title-1 ">Ongoing Opportunity</p>
+                                </div>
+                                <div class="d-flex justify-content-between ps-4 pe-4">
+                                    <div class="d-flex justify-content-between">
+                                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                                        <div class="mx-2">
+                                            <p class="mb-0 ">250</p>
+                                            <p>Already-volunteered</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 ">
+                                <button class="Apply-btn p-2 ps-3 pe-3"> Apply <img
+                                        src="/html/Images/right-arrow.png" /> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="location over-buttons px-3 py-1">
+                            <img src="/HTML/Images/pin.png" />
+                            <span>Toronto</span>
+                            <div class="like over-buttons px-3 py-1">
+                                <img src="/HTML/Images/heart.png" />
+    
+                            </div>
+                            <div class="user over-buttons px-3 py-1">
+                                <img src="/HTML/Images/user.png" />
+    
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="/HTML/Images/Animal-welfare-&-save-birds-campaign.png"
+                            alt="Card image cap">
+                        <div class="d-flex justify-content-center">
+                            <p class="Title"> Animal</p>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Animal welfare & save birds campaing</h4>
+                            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd
+                                tempor incididunt ut labore...</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h6>CSE Netwoark</h6>
+                                </div>
+                                <div>
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/star.png" />
+                                    <img src="/html/images/star.png" />
+                                </div>
+
+                            </div>
+                            <div class="border-top border-bottom mt-4">
+                                <div class="justify-content-center d-flex">
+                                    <p class="Title-1 ">Plant 10,000 Trees</p>
+                                </div>
+                                <div class="d-flex justify-content-between ps-4 pe-4">
+                                    <div class="d-flex justify-content-between">
+                                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                                        <div class="mx-2">
+                                            <p class="mb-0 ">10</p>
+                                            <p>Seatf Left</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="progress" style="height: 10px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <p> 8000 achieved</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 ">
+                                <button class="Apply-btn p-2 ps-3 pe-3"> Apply <img
+                                        src="/html/Images/right-arrow.png" /> </button>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
-            </div>
-        </nav>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="location over-buttons px-3 py-1">
+                            <img src="/HTML/Images/pin.png" />
+                            <span>Toronto</span>
+                            <div class="like over-buttons px-3 py-1">
+                                <img src="/HTML/Images/heart.png" />
+    
+                            </div>
+                            <div class="user over-buttons px-3 py-1">
+                                <img src="/HTML/Images/user.png" />
+    
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="/HTML/Images/Plantation-and-Afforestation-programme.png"
+                            alt="Card image cap">
+                        <div class="d-flex justify-content-center">
+                            <p class="Title"> Health</p>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Plantation and Afforestation programme</h4>
+                            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd
+                                tempor incididunt ut labore....</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h6>CSE Netwoark</h6>
+                                </div>
+                                <div>
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/star.png" />
+                                    <img src="/html/images/star.png" />
+                                </div>
 
-    </header>
+                            </div>
+                            <div class="border-top border-bottom mt-4">
+                                <div class="justify-content-center d-flex">
+                                    <p class="Title-1 ">Plant 10,000 Trees</p>
+                                </div>
+                                <div class="d-flex justify-content-between ps-4 pe-4">
+                                    <div class="">
+                                        <img src="/HTML/Images/achieved.png" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="/html/images/right-arrow.png" />
+                                        <p> 8000 achieved</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 ">
+                                <button class="Apply-btn p-2 ps-3 pe-3"> Apply <img
+                                        src="/html/Images/right-arrow.png" /> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="location over-buttons px-3 py-1">
+                            <img src="/HTML/Images/pin.png" />
+                            <span>Toronto</span>
+                            <div class="like over-buttons px-3 py-1">
+                                <img src="/HTML/Images/heart.png" />
+    
+                            </div>
+                            <div class="user over-buttons px-3 py-1">
+                                <img src="/HTML/Images/user.png" />
+    
+                            </div>
+                        </div>
+                        <img class="card-img-top"
+                            src="/HTML/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
+                            alt="Card image cap">
+                        <div class="d-flex justify-content-center">
+                            <p class="Title"> Environment</p>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Grow Trees - On the path to encironment susatainability</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit...</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h6>CSE Netwoark</h6>
+                                </div>
+                                <div>
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/star.png" />
+                                    <img src="/html/images/star.png" />
+                                </div>
+
+                            </div>
+                            <div class="border-top border-bottom mt-4">
+                                <div class="justify-content-center d-flex"></div>
+                                <div class="d-flex justify-content-between ps-4 pe-4">
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 ">
+                                <button class="Apply-btn p-2 ps-3 pe-3"> View details <img
+                                        src="/html/Images/right-arrow.png" /> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="location over-buttons px-3 py-1">
+                            <img src="/HTML/Images/pin.png" />
+                            <span>Toronto</span>
+                            <div class="like over-buttons px-3 py-1">
+                                <img src="/HTML/Images/heart.png" />
+    
+                            </div>
+                            <div class="user over-buttons px-3 py-1">
+                                <img src="/HTML/Images/user.png" />
+    
+                            </div>
+                        </div>
+                        <img class="card-img-top"
+                            src="/HTML/Images/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png"
+                            alt="Card image cap">
+                        <div class="d-flex justify-content-center">
+                            <p class="Title"> Children</p>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Education Supplies for Every Pair of Shoes Sold</h4>
+                            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd
+                                tempor incididunt ut labore....</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h6>CSE Netwoark</h6>
+                                </div>
+                                <div>
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/star.png" />
+                                    <img src="/html/images/star.png" />
+                                </div>
+
+                            </div>
+                            <div class="border-top border-bottom mt-4">
+                                <div class="justify-content-center d-flex">
+                                    <p class="Title-1 ">From 10/01/2019 until 25/02/2019</p>
+                                </div>
+                                <div class="d-flex justify-content-between ps-4 pe-4">
+                                    <div class="d-flex justify-content-between">
+                                        <img class="Seats-left" src="/HTML/Images/Already-volunteered.png" alt="">
+                                        <div class="mx-2">
+                                            <p class="mb-0 ">250</p>
+                                            <p>Seatf Left</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
+                                        <div class="mx-2">
+                                            <p class="mb-0 ">09/01/2019</p>
+                                            <p>deadline</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 ">
+                                <button class="Apply-btn p-2 ps-3 pe-3"> Apply <img
+                                        src="/html/Images/right-arrow.png" /> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="location over-buttons px-3 py-1">
+                            <img src="/HTML/Images/pin.png" />
+                            <span>Toronto</span>
+                            <div class="like over-buttons px-3 py-1">
+                                <img src="/HTML/Images/heart.png" />
+    
+                            </div>
+                            <div class="user over-buttons px-3 py-1">
+                                <img src="/HTML/Images/user.png" />
+    
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="/HTML/Images/Nourish-the-Children-in--African-country-1.png"
+                            alt="Card image cap">
+                        <div class="d-flex justify-content-center">
+                            <p class="Title"> Nutriton</p>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Nourish the Children in African country</h4>
+                            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd
+                                tempor incididunt ut labore...</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h6>CSE Netwoark</h6>
+                                </div>
+                                <div>
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/selected-star.png" />
+                                    <img src="/html/images/star.png" />
+                                    <img src="/html/images/star.png" />
+                                </div>
+
+                            </div>
+                            <div class="border-top border-bottom mt-4">
+                                <div class="justify-content-center d-flex">
+                                    <p class="Title-1 ">Ongoing Opportunity</p>
+                                </div>
+                                <div class="d-flex justify-content-between ps-4 pe-4">
+                                    <div class="d-flex justify-content-between">
+                                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                                        <div class="mx-2">
+                                            <p class="mb-0 ">10</p>
+                                            <p>Seatf Left</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
+                                        <div class="mx-2">
+                                            <p class="mb-0 ">09/01/2019</p>
+                                            <p>deadline</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 ">
+                                <button class="Apply-btn p-2 ps-3 pe-3"> Apply <img
+                                        src="/html/Images/right-arrow.png" /> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <!-- list view -->
+
+
+
+
+        <div class="container-fluid mission-list-view" id="mission-list-view" style="display: none;">
+
+            <div class=" card list-view-card mt-4">
+                <div class="row no-gutters">
+
+                    <div class="col-sm-3 card-1">
+
+                        <img class="card-img" src="images/Grow-Trees-On-the-path-to-environment-sustainability.png"
+                            alt="Suresh Dasari Card">
+                        <div>
+                            <div class="location-1 over-buttons px-3 py-1">
+                                <img src="/HTML/Images/pin.png" />
+                                <span>Toronto</span>
+                                <div class="like-1 over-buttons px-3 py-1">
+                                    <img src="/HTML/Images/heart.png" />
+        
+                                </div>
+                                <div class="user-1 over-buttons px-3 py-1">
+                                    <img src="/HTML/Images/user.png" />
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <h3 id="list-mission-title">Grow-Trees On the path to environment sustainability </h3>
+                        <p id="list-mission-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore...</p>
+                        <div class="d-flex list-title-rating-duration mt-2">
+
+                            <div class="list-title-rating">
+                                <div>The Hunger</div>
+                                <div class="list-rating"><img src="images/selected-star.png" alt=""><img
+                                        src="images/selected-star.png" alt=""><img src="images/selected-star.png"
+                                        alt=""><img src="images/selected-star.png" alt=""><img
+                                        src="images/selected-star.png" alt=""></div>
+                            </div>
+
+                            <div class="list-duration mt-3">
+                                <div class="duration">
+                                    <p id="list-duration-txt">From 10/01/2019 until 25/02/2019</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class=" d-flex list-applybtn-seat-info mt-4">
+                            <div class="list-apply-btn mt-2">
+                                <button class="list-mission-apply" type="button" onclick="">Apply <img
+                                        src="images/right-arrow.png" alt=""></button>
+                            </div>
+
+                            <div class="d-flex justify-content-between  ">
+                                <div class="Seats d-flex align-items-center">
+                                    <img class="m-2" src="images/Already-volunteered.png" alt="">
+                                    <div><span style="font-weight: 600;">10</span>
+                                        <p style="margin-bottom: 0; "> Seats left</p>
+                                    </div>
+                                </div>
+                                <div class="deadline d-flex align-items-center ">
+                                    <img class="m-2" src="images/deadline.png" alt="">
+                                    <div>
+                                        <span style="font-weight: 600;">09/01/2019</span>
+                                        <p style="margin-bottom: 0;">Deadline</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="card list-view-card mt-4">
+                <div class="row no-gutters">
+                    <div class="col-sm-3 card-1">
+                        <img class="card-img" src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png"
+                            alt="Suresh Dasari Card">
+                            <div>
+                                <div class="location-1 over-buttons px-3 py-1">
+                                    <img src="/HTML/Images/pin.png" />
+                                    <span>Toronto</span>
+                                    <div class="like-1 over-buttons px-3 py-1">
+                                        <img src="/HTML/Images/heart.png" />
+            
+                                    </div>
+                                    <div class="user-1 over-buttons px-3 py-1">
+                                        <img src="/HTML/Images/user.png" />
+            
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <h3 id="list-mission-title">Grow-Trees On the path to environment sustainability </h3>
+                        <p id="list-mission-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore...</p>
+                        <div class="d-flex list-title-rating-duration mt-2">
+
+                            <div class="list-title-rating">
+                                <div>The Hunger</div>
+                                <div class="list-rating"><img src="images/selected-star.png" alt=""><img
+                                        src="images/selected-star.png" alt=""><img src="images/selected-star.png"
+                                        alt=""><img src="images/selected-star.png" alt=""><img src="images/star.png"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="list-duration mt-3">
+                                <div class="duration">
+                                    <p id="list-duration-txt">From 10/01/2019 until 25/02/2019</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class=" d-flex list-applybtn-seat-info mt-4 ">
+                            <div class="list-apply-btn mt-2">
+                                <button class="list-mission-apply" type="button" onclick="">Apply <img
+                                        src="images/right-arrow.png" alt=""></button>
+                            </div>
+
+                            <div class="d-flex justify-content-between  ">
+                                <div class="Seats d-flex align-items-center">
+                                    <img class="m-2" src="images/Already-volunteered.png" alt="">
+                                    <div><span style="font-weight: 600;">10</span>
+                                        <p style="margin-bottom: 0; "> Seats left</p>
+                                    </div>
+                                </div>
+                                <div class="deadline d-flex align-items-center">
+                                    <img class="m-2" src="images/deadline.png" alt="">
+                                    <div>
+                                        <span style="font-weight: 600;">09/01/2019</span>
+                                        <p style="margin-bottom: 0;">Deadline</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="card list-view-card mt-4">
+                <div class="row no-gutters">
+                    <div class="col-sm-3 card-1">
+                        <img class="card-img" src="images/Nourish-the-Children-in--African-country-1.png"
+                            alt="Suresh Dasari Card">
+                            <div>
+                                <div class="location-1 over-buttons px-3 py-1">
+                                    <img src="/HTML/Images/pin.png" />
+                                    <span>Toronto</span>
+                                    <div class="like-1 over-buttons px-3 py-1">
+                                        <img src="/HTML/Images/heart.png" />
+            
+                                    </div>
+                                    <div class="user-1 over-buttons px-3 py-1">
+                                        <img src="/HTML/Images/user.png" />
+            
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <h3 id="list-mission-title">Nourish the Children in African country </h3>
+                        <p id="list-mission-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore...</p>
+                        <div class="d-flex list-title-rating-duration mt-2">
+
+                            <div class="list-title-rating">
+                                <div>The Hunger</div>
+                                <div class="list-rating"><img src="images/selected-star.png" alt=""><img
+                                        src="images/selected-star.png" alt=""><img src="images/selected-star.png"
+                                        alt=""><img src="images/star.png" alt=""><img src="images/star.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="list-duration mt-3">
+                                <div class="duration">
+                                    <p id="list-duration-txt">Ongoing Oppurtunity</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class=" d-flex list-applybtn-seat-info mt-4">
+                            <div class="list-apply-btn mt-2">
+                                <button class="list-mission-apply" type="button" onclick="">Apply <img
+                                        src="images/right-arrow.png" alt=""></button>
+                            </div>
+
+                            <div class="d-flex justify-content-between  ">
+                                <div class="Seats d-flex align-items-center">
+                                    <img class="m-2" src="images/Already-volunteered.png" alt="">
+                                    <div><span style="font-weight: 600;">10</span>
+                                        <p style="margin-bottom: 0; "> Seats left</p>
+                                    </div>
+                                </div>
+                                <div class="deadline d-flex align-items-center">
+                                    <img class="m-2" src="images/deadline.png" alt="">
+                                    <div>
+                                        <span style="font-weight: 600;">09/01/2019</span>
+                                        <p style="margin-bottom: 0;">Deadline</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="card list-view-card mt-4">
+                <div class="row no-gutters">
+                    <div class="col-sm-3 card-1">
+                        <img class="card-img" src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png"
+                            alt="Suresh Dasari Card">
+                            <div>
+                                <div class="location-1 over-buttons px-3 py-1">
+                                    <img src="/HTML/Images/pin.png" />
+                                    <span>Toronto</span>
+                                    <div class="like-1 over-buttons px-3 py-1">
+                                        <img src="/HTML/Images/heart.png" />
+            
+                                    </div>
+                                    <div class="user-1 over-buttons px-3 py-1">
+                                        <img src="/HTML/Images/user.png" />
+            
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <h3 id="list-mission-title">CSR initiative stands for Coffee and Farmer Equity </h3>
+                        <p id="list-mission-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore...</p>
+                        <div class="d-flex list-title-rating-duration mt-2">
+
+                            <div class="list-title-rating">
+                                <div>The Hunger</div>
+                                <div class="list-rating"><img src="images/selected-star.png" alt=""><img
+                                        src="images/selected-star.png" alt=""><img src="images/selected-star.png"
+                                        alt=""><img src="images/star.png" alt=""><img src="images/star.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="list-duration mt-3">
+                                <div class="duration">
+                                    <p id="list-duration-txt">Ongoing Oppurtunity</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class=" d-flex list-applybtn-seat-info mt-4">
+                            <div class="list-apply-btn mt-2">
+                                <button class="list-mission-apply" type="button" onclick="">Apply <img
+                                        src="images/right-arrow.png" alt=""></button>
+                            </div>
+
+                            <div class="d-flex justify-content-between  ">
+                                <div class="Seats d-flex align-items-center">
+                                    <img class="m-2" src="images/Already-volunteered.png" alt="">
+                                    <div><span style="font-weight: 600;">250</span>
+                                        <p style="margin-bottom: 0; "> Already-volunteered</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card list-view-card mt-4">
+                <div class="row no-gutters">
+                    <div class="col-sm-3 card-1">
+                        <img class="card-img" src="images/Animal-welfare-&-save-birds-campaign.png"
+                            alt="Suresh Dasari Card">
+                            <div>
+                                <div class="location-1 over-buttons px-3 py-1">
+                                    <img src="/HTML/Images/pin.png" />
+                                    <span>Toronto</span>
+                                    <div class="like-1 over-buttons px-3 py-1">
+                                        <img src="/HTML/Images/heart.png" />
+            
+                                    </div>
+                                    <div class="user-1 over-buttons px-3 py-1">
+                                        <img src="/HTML/Images/user.png" />
+            
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <h3 id="list-mission-title"> Animal-welfare & Save birdscampaign </h3>
+                        <p id="list-mission-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore...</p>
+                        <div class="d-flex list-title-rating-duration mt-2">
+
+                            <div class="list-title-rating">
+                                <div>The Hunger</div>
+                                <div class="list-rating"><img src="images/selected-star.png" alt=""><img
+                                        src="images/selected-star.png" alt=""><img src="images/selected-star.png"
+                                        alt=""><img src="images/selected-star.png" alt=""><img
+                                        src="images/selected-star.png" alt=""></div>
+                            </div>
+
+                            <div class="list-duration mt-3">
+                                <div class="duration">
+                                    <p id="list-duration-txt">Ongoing Oppurtunity</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class=" d-flex list-applybtn-seat-info mt-4">
+                            <div class="list-apply-btn mt-2">
+                                <button class="list-mission-apply" type="button" onclick="">Apply <img
+                                        src="images/right-arrow.png" alt=""></button>
+                            </div>
+
+                            <div class="d-flex justify-content-between  ">
+                                <div class="Seats d-flex align-items-center">
+                                    <img class="m-2" src="images/Already-volunteered.png" alt="">
+                                    <div><span style="font-weight: 600;">250</span>
+                                        <p style="margin-bottom: 0; "> Already-volunteered</p>
+                                    </div>
+                                </div>
+                                <div class="deadline d-flex align-items-center">
+                                    <img class="m-2" src="images/achieved.png" alt="">
+                                    <div>
+                                        <span ><input type="range"></span>
+                                        <p style="margin-bottom: 0;">8000 Achieved</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card list-view-card mt-4">
+                <div class="row no-gutters">
+                    <div class="col-sm-3 card-1">
+                        <img class="card-img" src="images/Plantation-and-Afforestation-programme.png"
+                            alt="Suresh Dasari Card">
+                            <div>
+                                <div class="location-1 over-buttons px-3 py-1">
+                                    <img src="/HTML/Images/pin.png" />
+                                    <span>Toronto</span>
+                                    <div class="like-1 over-buttons px-3 py-1">
+                                        <img src="/HTML/Images/heart.png" />
+            
+                                    </div>
+                                    <div class="user-1 over-buttons px-3 py-1">
+                                        <img src="/HTML/Images/user.png" />
+            
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <h3 id="list-mission-title">Plantation and Afforestation programme</h3>
+                        <p id="list-mission-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore...</p>
+                        <div class="d-flex list-title-rating-duration mt-2">
+
+                            <div class="list-title-rating">
+                                <div>The Hunger</div>
+                                <div class="list-rating"><img src="images/selected-star.png" alt=""><img
+                                        src="images/selected-star.png" alt=""><img src="images/selected-star.png"
+                                        alt=""><img src="images/selected-star.png" alt=""><img src="images/star.png"
+                                        alt=""></div>
+                            </div>
+
+                            <div class="list-duration mt-3">
+                                <div class="duration">
+                                    <p id="list-duration-txt">Ongoing Oppurtunity</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class=" d-flex list-applybtn-seat-info mt-4">
+                            <div class="list-apply-btn mt-2">
+                                <button class="list-mission-apply" type="button" onclick="">Apply <img
+                                        src="images/right-arrow.png" alt=""></button>
+                            </div>
+
+                            <div class="d-flex"><img class="m-2" src="images/achieved.png" alt="">
+                                <div>
+                                    <span><input type="range"></span>
+                                    <p style="margin-bottom: 0;">8000 Achieved</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="card list-view-card mt-4">
+                <div class="row no-gutters">
+                    <div class="col-sm-3 card-1">
+                        <img class="card-img" src="images/Grow-Trees-On-the-path-to-environment-sustainability.png"
+                            alt="Suresh Dasari Card">
+                            <div>
+                                <div class="location-1 over-buttons px-3 py-1">
+                                    <img src="/HTML/Images/pin.png" />
+                                    <span>Toronto</span>
+                                    <div class="like-1 over-buttons px-3 py-1">
+                                        <img src="/HTML/Images/heart.png" />
+            
+                                    </div>
+                                    <div class="user-1 over-buttons px-3 py-1">
+                                        <img src="/HTML/Images/user.png" />
+            
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <h3 id="list-mission-title">Grow-Trees On the path to environment sustainability </h3>
+                        <p id="list-mission-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore...</p>
+                        <div class="d-flex list-title-rating-duration mt-2">
+
+                            <div class="list-title-rating">
+                                <div>The Hunger</div>
+                                <div class="list-rating"><img src="images/selected-star.png" alt=""><img
+                                        src="images/selected-star.png" alt=""><img src="images/selected-star.png"
+                                        alt=""><img src="images/selected-star.png" alt=""><img src="images/star.png"
+                                        alt=""></div>
+                            </div>
+
+                            <div class="list-duration mt-3">
+                                <div class="duration">
+                                    <p id="list-duration-txt">From 10/01/2019 until 25/02/2019</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class=" d-flex list-applybtn-seat-info mt-4">
+                            <div class="list-apply-btn mt-2">
+                                <button class="list-mission-apply" type="button" onclick="">Apply <img
+                                        src="images/right-arrow.png" alt=""></button>
+                            </div>
+
+                            <div class="d-flex justify-content-between  ">
+                                <div class="Seats d-flex align-items-center">
+                                    <img class="m-2" src="images/Already-volunteered.png" alt="">
+                                    <div><span style="font-weight: 600;">10</span>
+                                        <p style="margin-bottom: 0; "> Seats left</p>
+                                    </div>
+                                </div>
+                                <div class="deadline d-flex align-items-center">
+                                    <img class="m-2" src="images/deadline.png" alt="">
+                                    <div>
+                                        <span style="font-weight: 600;">09/01/2019</span>
+                                        <p style="margin-bottom: 0;">Deadline</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>            
+
+    <!-- ----footer--- -->
+    <div>
+        <div class="pagination d-flex justify-content-center mt-5 mb-5">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+    <footer class="border-top footer pt-4  pb-3">
+        <div class="container">
+            <p>Privacy Policy</p>
+        </div>
+    </footer>
+    </div>
+    <script src="/HTML/js/Home.js"></script>
+    <script src="/HTML/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
-
-<!-- filterr code -->
-
-<div class="row filter-bar-row align-items-center">
-    <div class="col-auto filter-bar">
-        <span>India</span>
-        <button type="button" class="btn btn-close-search">
-            <img src="/HTML/Images/cancel.png" alt="close" />
-        </button>
-    </div>
-    <div class="col-auto filter-bar">
-        <span>Environment</span>
-        <button type="button" class="btn btn-close-search">
-            <img src="/HTML/Images/cancel.png" alt="close" />
-        </button>
-    </div>
-    <div class="col-auto filter-bar">
-        <span>Archeology</span>
-        <button type="button" class="btn btn-close-search">
-            <img src="/HTML/Images/cancel.png" alt="close" />
-        </button>
-    </div>
-
-    <div class="col-auto filter-bar">
-        <span>Jaipur</span>
-        <button type="button" class="btn btn-close-search">
-            <img src="/HTML/Images/cancel.png" alt="close" />
-        </button>
-    </div>
-    <div class="col-auto filter-bar">
-        <span>Tree Plantation</span>
-        <button type="button" class="btn btn-close-search">
-            <img src="/HTML/Images/cancel.png" alt="close" />
-        </button>
-    </div>
-    <div class="col-auto filter-bar">
-        <span>Nutriton</span>
-        <button type="button" class="btn btn-close-search">
-            <img src="/HTML/Images/cancel.png" alt="close" />
-        </button>
-    </div>
-
-    <div class="col-auto filter-bar">
-        <span>Toronto</span>
-        <button type="button" class="btn btn-close-search">
-            <img src="/HTML/Images/cancel.png" alt="close" />
-        </button>
-    </div>
-
-    <div class="col-auto">
-        <button type="button" class="btn btn-close-search clr-btn">
-            Clear all
-        </button>
-    </div>
-</div>
-
-<div class="row explore">
-    <div class="col">
-        <h2>Explore <strong>72 Missions</strong></h2>
-    </div>
-
-    <div class="col d-flex flex-row justify-content-end ps-5">
-        <div class="p-0 d-flex flex-row me-4">
-            <button class="sortby" type="button" data-bs-toggle="dropdown">
-                <span class="">Sort by</span>
-                <img src="/HTML//Images/drop-down.png" class="mx-0 mx-sm-2" />
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">USA</a></li>
-                <li><a class="dropdown-item" href="#">INDIA</a></li>
-                <li><a class="dropdown-item" href="#">Canada</a></li>
-            </ul>
-        </div>
-        <div class="container">
-            <button class="btn btn-primary btn-grid"><img src="/HTML/Images/grid.png"/></button>
-            <button class="btn btn-danger btn-list"><img src="/html/Images/list.png"/></button>
-          </div>
-    </div>
-</div>
-
-
-<!-- Card list and Gride view -->
-
-
-
-  <div class="container grid-container">
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card ">
-            <div class="location over-buttons px-3 py-1 ">
-                <img src="/HTML/Images/pin.png" />
-                <span>Toronto</span>
-            </div>
-            <div class="like over-buttons px-3 py-1">
-                <img src="/HTML/Images/heart.png" />
-
-            </div>
-            <div class="like over-buttons px-3 py-1">
-                <img src="/HTML/Images/heart.png" />
-
-            </div>
-          <img class="card-img-top" src="/HTML/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="Card image cap">
-          <div class="d-flex justify-content-center">
-            <p class="Title"> Environment</p>
-          </div>
-         
-          <div class="card-body">
-            <h4 class="card-title">Grow Trees - On the path to encironment susatainability</h4>
-            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore...</p>
-            <div class="d-flex justify-content-between">
-                <div>
-                    <h6>CSE Netwoark</h6>
-                </div>
-                <div>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/star.png"/>
-                    <img src="/html/images/star.png"/>
-                </div>
-
-            </div>
-            <div class="border-top border-bottom mt-4">
-                <div class="justify-content-center d-flex"><p class="Title-1">From 10/01/2019 until 25/02/2019   </p></div>
-                <div class="d-flex justify-content-between ps-4 pe-4" >
-                    <div class="d-flex justify-content-between">
-                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
-                        <div class="mx-2">
-                            <p class="mb-0 ">10</p>
-                            <p>Seatf Left</p>
-                        </div>
-                    </div>
-                  
-                    <div class="d-flex justify-content-between">
-                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
-                        <div class="mx-2">
-                            <p class="mb-0 ">09/01/2019</p>
-                            <p>deadline</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="d-flex justify-content-center mt-3 ">
-                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
-                    <img src="/html/Images/right-arrow.png"/>
-                </button>
-                
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-            <div class="location over-buttons px-3 py-1">
-                <img src="/HTML/Images/pin.png" />
-                <span>Toronto</span>
-            </div>
-          <img class="card-img-top" src="/HTML/Images/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png" alt="Card image cap">
-          <div class="d-flex justify-content-center">
-            <p class="Title"> Children</p>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Education Supplies for Every Pair of Shoes Sold</h4>
-            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore...</p>
-            <div class="d-flex justify-content-between">
-                <div>
-                    <h6>CSE Netwoark</h6>
-                </div>
-                <div>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/star.png"/>
-                    <img src="/html/images/star.png"/>
-                </div>
-
-            </div>
-            <div class="border-top border-bottom mt-4">
-                <div class="justify-content-center d-flex"><p class="Title-1">From 10/01/2019 until 25/02/2019</p></div>
-                <div class="d-flex justify-content-between ps-4 pe-4" >
-                    <div class="d-flex justify-content-between">
-                        <img class="Seats-left" src="/HTML/Images/Already-volunteered.png" alt="">
-                        <div class="mx-2">
-                            <p class="mb-0 ">250</p>
-                            <p>Seatf Left</p>
-                        </div>
-                    </div>
-                  
-                    <div class="d-flex justify-content-between">
-                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
-                        <div class="mx-2">
-                            <p class="mb-0 ">09/01/2019</p>
-                            <p>deadline</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="d-flex justify-content-center mt-3 ">
-                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
-                    <img src="/html/Images/right-arrow.png"/>
-                </button>
-                
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-            <div class="location over-buttons px-3 py-1">
-                <img src="/HTML/Images/pin.png" />
-                <span>Toronto</span>
-            </div>
-          <img class="card-img-top" src="/HTML/Images/Nourish-the-Children-in--African-country-1.png" alt="Card image cap">
-          <div class="d-flex justify-content-center">
-            <p class="Title"> Nutriton</p>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Nourish the Children in African country</h4>
-            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore....</p>
-            <div class="d-flex justify-content-between">
-                <div>
-                    <h6>CSE Netwoark</h6>
-                </div>
-                <div>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/star.png"/>
-                    <img src="/html/images/star.png"/>
-                </div>
-
-            </div>
-            <div class="border-top border-bottom mt-4">
-                <div class="justify-content-center d-flex"><p class="Title-1">Ongoing Opportunity</p></div>
-                <div class="d-flex justify-content-between ps-4 pe-4" >
-                    <div class="d-flex justify-content-between">
-                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
-                        <div class="mx-2">
-                            <p class="mb-0 ">10</p>
-                            <p>Seatf Left</p>
-                        </div>
-                    </div>
-                  
-                    <div class="d-flex justify-content-between">
-                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
-                        <div class="mx-2">
-                            <p class="mb-0 ">09/01/2019</p>
-                            <p>deadline</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="d-flex justify-content-center mt-3 ">
-                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
-                    <img src="/html/Images/right-arrow.png"/>
-                </button>
-                
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-            <div class="location over-buttons px-3 py-1">
-                <img src="/HTML/Images/pin.png" />
-                <span>Toronto</span>
-            </div>
-          <img class="card-img-top" src="\HTML\Images\CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png" alt="Card image cap">
-          <div class="d-flex justify-content-center">
-            <p class="Title">Environment</p>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">CSR initiative stands for Coffee and Farmer Equity</h4>
-            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore...</p>
-            <div class="d-flex justify-content-between">
-                <div>
-                    <h6>CSE Netwoark</h6>
-                </div>
-                <div>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/star.png"/>
-                    <img src="/html/images/star.png"/>
-                </div>
-
-            </div>
-            <div class="border-top border-bottom mt-4">
-                <div class="justify-content-center d-flex"><p class="Title-1 ">Ongoing Opportunity</p></div>
-                <div class="d-flex justify-content-between ps-4 pe-4" >
-                    <div class="d-flex justify-content-between">
-                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
-                        <div class="mx-2">
-                            <p class="mb-0 ">250</p>
-                            <p>Already-volunteered</p>
-                        </div>
-                    </div>
-
-                </div>
-                
-            </div>
-            <div class="d-flex justify-content-center mt-3 ">
-                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
-                    <img src="/html/Images/right-arrow.png"/>
-                </button>
-                
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-            <div class="location over-buttons px-3 py-1">
-                <img src="/HTML/Images/pin.png" />
-                <span>Toronto</span>
-            </div>
-          <img class="card-img-top" src="/HTML/Images/Animal-welfare-&-save-birds-campaign.png" alt="Card image cap">
-          <div class="d-flex justify-content-center">
-            <p class="Title"> Animal</p>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Animal welfare & save birds campaing</h4>
-            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore...</p>
-            <div class="d-flex justify-content-between">
-                <div>
-                    <h6>CSE Netwoark</h6>
-                </div>
-                <div>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/star.png"/>
-                    <img src="/html/images/star.png"/>
-                </div>
-
-            </div>
-            <div class="border-top border-bottom mt-4">
-                <div class="justify-content-center d-flex"><p class="Title-1 ">Plant 10,000 Trees</p></div>
-                <div class="d-flex justify-content-between ps-4 pe-4" >
-                    <div class="d-flex justify-content-between">
-                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
-                        <div class="mx-2">
-                            <p class="mb-0 ">10</p>
-                            <p>Seatf Left</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="/html/images/right-arrow.png"/>
-                        <p> 8000 achieved</p>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="d-flex justify-content-center mt-3 ">
-                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
-                    <img src="/html/Images/right-arrow.png"/>
-                </button>
-                
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-            <div class="location over-buttons px-3 py-1">
-                <img src="/HTML/Images/pin.png" />
-                <span>Toronto</span>
-            </div>
-          <img class="card-img-top" src="/HTML/Images/Plantation-and-Afforestation-programme.png" alt="Card image cap">
-          <div class="d-flex justify-content-center">
-            <p class="Title"> Health</p>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Plantation and Afforestation programme</h4>
-            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore....</p>
-            <div class="d-flex justify-content-between">
-                <div>
-                    <h6>CSE Netwoark</h6>
-                </div>
-                <div>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/star.png"/>
-                    <img src="/html/images/star.png"/>
-                </div>
-
-            </div>
-            <div class="border-top border-bottom mt-4">
-                <div class="justify-content-center d-flex"><p class="Title-1 ">Plant 10,000 Trees</p></div>
-                <div class="d-flex justify-content-between ps-4 pe-4" >
-                    <div class="">
-                        <img src="/HTML/Images/achieved.png" alt="">
-                    </div>
-                    <div>
-                        <img src="/html/images/right-arrow.png"/>
-                        <p> 8000 achieved</p>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="d-flex justify-content-center mt-3 ">
-                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
-                    <img src="/html/Images/right-arrow.png"/>
-                </button>
-                
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-            <div class="location over-buttons px-3 py-1">
-                <img src="/HTML/Images/pin.png" />
-                <span>Toronto</span>
-            </div>
-          <img class="card-img-top" src="/HTML/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="Card image cap">
-          <div class="d-flex justify-content-center">
-            <p class="Title"> Environment</p>
-          </div>
-
-          <div class="card-body">
-            <h4 class="card-title">Grow Trees - On the path to encironment susatainability</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit...</p>
-            <div class="d-flex justify-content-between">
-                <div>
-                    <h6>CSE Netwoark</h6>
-                </div>
-                <div>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/star.png"/>
-                    <img src="/html/images/star.png"/>
-                </div>
-
-            </div>
-            <div class="border-top border-bottom mt-4">
-                <div class="justify-content-center d-flex"></div>
-                <div class="d-flex justify-content-between ps-4 pe-4" >
-                    
-                </div>
-                
-            </div>
-            <div class="d-flex justify-content-center mt-3 ">
-                <button class="Apply-btn p-2 ps-3 pe-3" > View details
-                    <img src="/html/Images/right-arrow.png"/>
-                </button>
-                
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-            <div class="location over-buttons px-3 py-1">
-                <img src="/HTML/Images/pin.png" />
-                <span>Toronto</span>
-            </div>
-          <img class="card-img-top" src="/HTML/Images/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png" alt="Card image cap">
-          <div class="d-flex justify-content-center">
-            <p class="Title"> Children</p>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Education Supplies for Every Pair of Shoes Sold</h4>
-            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore....</p>
-            <div class="d-flex justify-content-between">
-                <div>
-                    <h6>CSE Netwoark</h6>
-                </div>
-                <div>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/star.png"/>
-                    <img src="/html/images/star.png"/>
-                </div>
-
-            </div>
-            <div class="border-top border-bottom mt-4">
-                <div class="justify-content-center d-flex"><p class="Title-1 ">From 10/01/2019 until 25/02/2019</p></div>
-                <div class="d-flex justify-content-between ps-4 pe-4" >
-                    <div class="d-flex justify-content-between">
-                        <img class="Seats-left" src="/HTML/Images/Already-volunteered.png" alt="">
-                        <div class="mx-2">
-                            <p class="mb-0 ">250</p>
-                            <p>Seatf Left</p>
-                        </div>
-                    </div>
-                  
-                    <div class="d-flex justify-content-between">
-                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
-                        <div class="mx-2">
-                            <p class="mb-0 ">09/01/2019</p>
-                            <p>deadline</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="d-flex justify-content-center mt-3 ">
-                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
-                    <img src="/html/Images/right-arrow.png"/>
-                </button>
-                
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-            <div class="location over-buttons px-3 py-1">
-                <img src="/HTML/Images/pin.png" />
-                <span>Toronto</span>
-            </div>
-          <img class="card-img-top" src="/HTML/Images/Nourish-the-Children-in--African-country-1.png" alt="Card image cap">
-          <div class="d-flex justify-content-center">
-            <p class="Title"> Nutriton</p>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Nourish the Children in African country</h4>
-            <p class="card-text">Lorem psum dolor sit amet, consecteture adipiscing elit, se do eusomd tempor incididunt ut labore...</p>
-            <div class="d-flex justify-content-between">
-                <div>
-                    <h6>CSE Netwoark</h6>
-                </div>
-                <div>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/selected-star.png"/>
-                    <img src="/html/images/star.png"/>
-                    <img src="/html/images/star.png"/>
-                </div>
-
-            </div>
-            <div class="border-top border-bottom mt-4">
-                <div class="justify-content-center d-flex"><p class="Title-1 ">Ongoing Opportunity</p></div>
-                <div class="d-flex justify-content-between ps-4 pe-4" >
-                    <div class="d-flex justify-content-between">
-                        <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
-                        <div class="mx-2">
-                            <p class="mb-0 ">10</p>
-                            <p>Seatf Left</p>
-                        </div>
-                    </div>
-                  
-                    <div class="d-flex justify-content-between">
-                        <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
-                        <div class="mx-2">
-                            <p class="mb-0 ">09/01/2019</p>
-                            <p>deadline</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="d-flex justify-content-center mt-3 ">
-                <button class="Apply-btn p-2 ps-3 pe-3" > Apply
-                    <img src="/html/Images/right-arrow.png"/>
-                </button>
-                
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    
-  </div>
-</div>
 
 </html>
