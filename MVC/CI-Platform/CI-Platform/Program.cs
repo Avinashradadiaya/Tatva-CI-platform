@@ -42,6 +42,13 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "",
     pattern: "{controller=Home}/{action=Home}");
+app.MapControllerRoute(
+    name: "",
+    pattern: "{controller=Home}/{action=Nomissionfound}");
+app.MapControllerRoute(
+    name: "",
+    pattern: "{controller=Home}/{action=VolunteeringMissionPage}");
+
 
 
 

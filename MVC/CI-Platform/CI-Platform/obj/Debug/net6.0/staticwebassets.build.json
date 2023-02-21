@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OdnJKQHZL9Uq6NHbxlRmquiC9XzWG2f2pXf+I9f+jEc=",
+  "Hash": "C8ZOjFJm0tFIFE1ZeW9EOMJ7QmTMdp0Hp2GvVmY9oBw=",
   "Source": "CI-platform",
   "BasePath": "_content/CI-platform",
   "Mode": "Default",
@@ -83,23 +83,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\wwwroot\\css\\StyleSheet.css",
-      "SourceId": "CI-platform",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\wwwroot\\",
-      "BasePath": "_content/CI-platform",
-      "RelativePath": "css/StyleSheet.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
     },
     {
       "Identity": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\wwwroot\\favicon.ico",

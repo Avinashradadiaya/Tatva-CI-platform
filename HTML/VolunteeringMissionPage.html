@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Volunterring Mission Page </title>
+
+    <!-- attach a css file and bootstrap file -->
+
+    <link href="/HTML/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/HTML/css/Home.css" rel="stylesheet" />
+    <!-- attach a JS file -->
+    <script src="/HTML/js/Home.js"></script>
+    <script src="/HTML/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+
+<body>
+    <nav class="navbar  navbar-expand-md navbar-toggleable-sm navbar-light bg-white  box-shadow   topnav ">
+        <div class="container-fluid justify-content-start">
+
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand ms-4">
+                <img src="./images/logo.png" alt="logo" class="ps-0 pe-3" />
+            </a>
+
+            <div class="navbar-collapse collapse  ">
+
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle ps-0 pe-2" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Explore
+                                <img src="./images/drop-down.png" class="ic-down">
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark pe-2" asp-area="" asp-controller="Home"
+                            asp-action="Index">Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark stories me-2" asp-area="" asp-controller="Home"
+                            asp-action="Index">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle ps-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Policy
+                                <img src="./images/drop-down.png" class="ic-down">
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="dropdown u2">
+                <button class="btn dropdown-toggle profile" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <img src="./images/user-img.png" class="userProfile">
+                    <span>John Doe</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end userdropdown">
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Help</a></li>
+                    <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </nav>
+    <div class=" d-flex mt-4">
+        <div class="page-wrap col-6 ">
+            <div class="carousel">
+                <div class="slide-container__wrap">
+                    <ul class="slide-container">
+                        <li id="slide1" tabindex="-1">
+                            <img src="/HTML/Images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                                alt="Slide 1 Image" />
+                            <p>Text Description of Slide 1</p>
+                        </li>
+                        <li id="slide2" tabindex="-1">
+                            <img src="/HTML/Images/img2.png" alt="Slide 2 Image" />
+                            <p>Text Description of Slide 2</p>
+                        </li>
+                        <li id="slide3" tabindex="-1">
+                            <img src="/HTML/Images/Grow-Trees-On-the-path-to-environment-sustainability-login.png"
+                                alt="Slide 3 Image" />
+                            <p>Text Description of Slide 3</p>
+                        </li>
+                        <li id="slide4" tabindex="-1">
+                            <img src="/HTML/Images/img22.png" alt="Slide 4 Image" />
+                            <p>Text Description of Slide 4</p>
+                        </li>
+                        <li id="slide5" tabindex="-1">
+                            <img src="/HTML/Images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"" alt="
+                                Slide 5 Image" />
+                            <p>Text Description of Slide 5</p>
+                        </li>
+                        <li id="slide6" tabindex="-1">
+                            <img src="/HTML/Images/img2.png" alt="Slide 6 Image" />
+                            <p>Text Description of Slide 6</p>
+                        </li>
+                        <li id="slide7" tabindex="-1">
+                            <img src="/HTML/Images/Grow-Trees-On-the-path-to-environment-sustainability-login.png"
+                                alt="Slide 7 Image" />
+                            <p>Text Description of Slide 7</p>
+                        </li>
+                        <li id="slide8" tabindex="-1">
+                            <img src="/HTML/Images/img22.png" alt="Slide 8 Image" />
+                            <p>Text Description of Slide 8</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="thumb-container__wrap">
+                    <a href="#prev" class="prev">Scroll to Previous Slide</a>
+                    <ul class="thumb-container">
+                        <li><a class="active" href="#slide1"
+                                style="background-image: url(/HTML/Images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png);">Scroll
+                                to Slide 1 of 10</a></li>
+                        <li><a href="#slide2" style="background-image: url(/HTML/Images/img2.png);">Scroll to Slide 2 of
+                                10</a></li>
+                        <li><a href="#slide3"
+                                style="background-image: url(/HTML/Images/Grow-Trees-On-the-path-to-environment-sustainability-login.png);">Scroll
+                                to Slide 3 of 10</a></li>
+                        <li><a href="#slide4" style="background-image: url(/HTML/Images/img22.png);">Scroll to Slide 4
+                                of 10</a></li>
+                        <li><a href="#slide5"
+                                style="background-image: url(/HTML/Images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png);">Scroll
+                                to Slide 5 of 10</a></li>
+                        <li><a href="#slide6" style="background-image: url(/HTML/Images/img2.png);">Scroll to Slide 6 of
+                                10</a></li>
+                        <li><a href="#slide7"
+                                style="background-image: url(/HTML/Images/Grow-Trees-On-the-path-to-environment-sustainability-login.png);">Scroll
+                                to Slide 7 of 10</a></li>
+                        <li><a href="#slide8" style="background-image: url(/HTML/Images/img22.png);">Scroll to Slide 8
+                                of 10</a></li>
+                    </ul>
+                    <a href="#next" class="next">Scroll to Next Slide</a>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex col-6">
+            <div class="card-body col-6 ">
+                <h4 class="card-title">CSR initiative stands for Coffee & Farmer Equity</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <div class="border-top border-bottom mt-4">
+                    <div class="justify-content-center d-flex">
+                        <p class="Title-1">From 10/01/2019 until 25/02/2019 </p>
+                    </div>
+                    <div class="d-flex justify-content-between ps-4 pe-4">
+                        <div class="d-flex justify-content-between">
+                            <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                            <div class="mx-2">
+                                <p class="mb-0 ">10</p>
+                                <p>Seatf Left</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <img class="Seats-left" src="/HTML/Images/deadline.png" alt="">
+                            <div class="mx-2">
+                                <p class="mb-0 ">09/01/2019</p>
+                                <p>deadline</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between ">
+                        <div class="d-flex justify-content-center mt-3 ">
+                            <button class="fav-worker p-2 ps-3 pe-3"> <img src="/HTML/Images/heart1.png"/> Add to Favourite 
+                            </button>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3 ">
+                            <button class="fav-worker p-2 ps-3 pe-3"> <img src="/HTML/Images/add1.png"/> to a Co-Worker
+                            </button>
+                        </div>
+                    </div>
+
+                
+                    <br/><br/>
+                    <div>
+                        <div class="border-top justify-content-center d-flex">
+                            <p class="Title-2">
+                                <img src="/html/images/star-empty.png" />
+                                <img src="/html/images/star-empty.png" />
+                                <img src="/html/images/star-empty.png" />
+                                <img src="/html/images/star-empty.png" />
+                                <img src="/html/images/star-empty.png" />
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between ps-4 pe-4 ">
+                        <div class="d-flex justify-content-between">
+                            
+                            <div class="mx-2 b-box">
+                                <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                                <p class="mb-0 ">City</p>
+                                <p>London</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            
+                            <div class="mx-2 b-box">
+                                <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                                <p class="mb-0 ">Theme</p>
+                                <p>Environment</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            
+                            <div class="mx-2 b-box">
+                                <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                                <p class="mb-0 ">Date</p>
+                                <p>Ongoing</p>
+                                <p>Opportunity</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            
+                            <div class="mx-2 b-box">
+                                <img class="Seats-left" src="/HTML/Images/Seats-left.png" alt="">
+                                <p class="mb-0 ">Organization</p>
+                                <p>CSE Network</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-center mt-3 ">
+                    <button class="Apply-btn p-2 ps-3 pe-3"> Apply now <img src="/html/Images/right-arrow.png" />
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        Link with href
+      </a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        Button with data-bs-target
+      </button>
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+</body>
+
+</html>

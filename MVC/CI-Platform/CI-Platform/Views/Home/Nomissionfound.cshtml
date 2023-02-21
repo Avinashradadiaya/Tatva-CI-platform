@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> No mission found </title>
+
+        <!-- attach a css file and bootstrap file -->
+
+        <link href="~/css/Home.css" rel="stylesheet" />
+        <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- attach a JS file -->
+    
+        <script src="~/js/Home.js"></script>
+        <script src="~/lib/bootstrap~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar  navbar-expand-md navbar-toggleable-sm navbar-light bg-white  box-shadow   topnav ">
+        <div class="container-fluid justify-content-start">
+
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand ms-4">
+                <img src="~/images/logo.png" alt="logo" class="ps-0 pe-3" />
+            </a>
+
+            <div class="navbar-collapse collapse  ">
+
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle ps-0 pe-2" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Explore
+                                <img src="~/images/drop-down.png" class="ic-down">
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark pe-2" asp-area="" asp-controller="Home"
+                            asp-action="Index">Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark stories me-2" asp-area="" asp-controller="Home"
+                            asp-action="Index">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle ps-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Policy
+                                <img src="~/images/drop-down.png" class="ic-down">
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="dropdown u2">
+                <button class="btn dropdown-toggle profile" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <img src="~/images/user-img.png" class="userProfile">
+                    <span>John Doe</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end userdropdown">
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Help</a></li>
+                    <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </nav>
+
+    <nav class="navbar navbar-light bg-white navbar-toggleable-md navbar-expand-md border-bottom shadow mb-3 secondnav">
+        <div class="container-fluid justify-content-between">
+
+
+            <div class="search-bar">
+                <i class="fa fa-search"></i>
+                <input type="search" class="form-control form-input" placeholder="Search Mission...">
+
+            </div>
+
+            <div class="row gx-0">
+                <div class="dropdown col">
+                    <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Country
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col">
+                    <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        City
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col">
+                    <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Theme
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col">
+                    <button class="btn dropdown-toggle btnborder" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Skills
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center">
+        <h1> No mission found </h1>
+    </div>
+
+    <!-- =====footer====footer-->
+    <div>
+        <div class="pagination d-flex justify-content-center mt-5 mb-5">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+    <footer class="border-top footer pt-4 pb-3">
+        <div >
+            <p>Privacy Policy</p>
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>

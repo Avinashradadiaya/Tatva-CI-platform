@@ -6,7 +6,7 @@ const gridView = () =>{
    
 
     if(x.style.display == "block"){
-        x.style.display = "none";
+        // x.style.display = "none";
     }
     else{
         x.style.display = "block";
@@ -14,13 +14,15 @@ const gridView = () =>{
     }
 }
 const listView = () =>{
-    var y = document.getElementById("mission-list-view");
+
 
     if(y.style.display == "block"){
-        y.style.display = "none";
+        // y.style.display = "none";
     }
     else{
         y.style.display = "block";
         x.style.display = "none";
     }
 }
+
+/* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- VolunteeringMissionPage-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */
