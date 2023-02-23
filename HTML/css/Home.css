@@ -207,7 +207,7 @@
 
 .location {
   position: absolute;
-  top: 15px;
+  top: 5px;
   right: 15px;
   height: 35px;
   width: fit-content;
@@ -216,10 +216,11 @@
   opacity: 0.5;
   color: white;
 }
+
 
 .like {
   position: absolute;
-  top: 110px;
+  margin-top: 90px;
   right: 15px;
   height: 35px;
   width: fit-content;
@@ -227,22 +228,30 @@
   background: #000000 0% 0% no-repeat padding-box;
   opacity: 0.5;
   color: white;
-}
-.user {
-  position: absolute;
-  top: 150px;
-  right: 15px;
-  height: 35px;
-  width: fit-content;
-  border-radius: 18px;
-  background: #000000 0% 0% no-repeat padding-box;
-  opacity: 0.5;
-  color: white;
-}
-.card {
-  position: relative;
 }
 
+.user {
+  position: absolute;
+  margin-top: 130px;
+  right: 15px;
+  height: 35px;
+  width: fit-content;
+  border-radius: 18px;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 0.5;
+  color: white;
+}
+
+
+
+.card {
+  position: relative;
+  height: 100%;
+}
+
+.progress{
+  max-width: 30%;
+}
 .progress-bar{
   background-color: #F88634;
 }
@@ -414,93 +423,17 @@
 
 
 /* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- VolunteeringMissionPage-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */
-*{
-  box-sizing: border-box;
+/* 
+.missioncarousel .carousel-item img{
+width: 100% !important;
+height: 100% !important;
 }
-.page-wrap {
-  max-width: 800px;
-  margin: 0 auto;
+.missioncarousel .carousel-indicators{
+margin: 0 !important;
+margin-bottom: -20px !important;
 }
-.carousal{
-  max-height: 10px;
-}
-.slide-container, .thumb-container {
-  width: 100%;
-  overflow: auto;
-  scroll-snap-type: x mandatory;
-  margin-bottom: -15px;
-  display: flex;
-  padding: 0;
-}
-.slide-container li, .thumb-container li {
-  display: block;
-}
-.slide-container__wrap, .thumb-container__wrap {
-  overflow: hidden;
-}
-.slide-container {
-  scroll-padding: 10%;
-}
-.slide-container li {
-  flex: 0 0 90%;
-  padding: 0 10px;
-  position: relative;
-  scroll-snap-align: start;
-}
-.slide-container img {
-  display: block;
-  width: 100%;
-}
-.slide-container p {
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-  right: 10px;
-  margin: 0;
-  padding: 30px;
-  background: rgba(0, 0, 0, .5);
-  color: #fff;
-}
-.thumb-container__wrap {
-  display: none;
-}
-@media (min-width: 765px) {
-  .slide-container {
-    scroll-padding: 0;
- }
-  .slide-container li {
-    flex-basis: 100%;
-    padding: 0;
- }
-  .slide-container p {
-    right: 0;
-    left: 0;
- }
-  .thumb-container.scrolling {
-    scroll-snap-type: none;
- }
-  .thumb-container li {
-    flex: 0 0 33.3333333333%;
-    scroll-snap-align: center;
- }
-  .thumb-container a {
-    display: block;
-    width: 100%;
-    padding-top: 56.25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-origin: border-box;
-    overflow: hidden;
-    text-indent: -9999px;
-    border: 4px solid transparent;
-    transition: border-color 0.3s;
- }
-  .thumb-container__wrap {
-    position: relative;
-    display: flex;
- }
-}
+
+
 
 /* =========first-grid view ===================== */
 .Title-2 {
@@ -522,7 +455,6 @@
 .b-box{
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 1px solid #E8E8E8;
-
   opacity: 1;
   padding-left: 20px;
   padding-right: 20px;
@@ -575,17 +507,16 @@
 }
 /* <===========information and resent vol.. box================================== --> */
 .small-ratings img{
-  height: 25px;
-  width: 25px;
+  width:25px;
+  height:25px;
 }
 .volunteer-img{
-  border-radius: 50%;
+  border-radius:50%;
   aspect-ratio: 1/1;
-  max-width:80px;
-  max-height: 80px;
+  width:70px;
+  height:70px;
+  object-fit: cover;
 }
-
-
 .main{
   padding:0%;
   margin: 5%;
