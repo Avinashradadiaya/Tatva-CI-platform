@@ -313,3 +313,5 @@ D:\Tatva-CI-platform\MVC\CI-Platform\CI-platform\obj\Debug\net6.0\ref\CI-platfor
 D:\Tatva-CI-platform\MVC\CI-Platform\CI-platform\obj\Debug\net6.0\CI-platform.pdb
 D:\Tatva-CI-platform\MVC\CI-Platform\CI-platform\obj\Debug\net6.0\CI-platform.genruntimeconfig.cache
 D:\Tatva-CI-platform\MVC\CI-Platform\CI-platform\obj\Debug\net6.0\CI-platform.csproj.AssemblyReference.cache
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-platform\bin\Debug\net6.0\CI-Platform.Models.dll
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-platform\bin\Debug\net6.0\CI-Platform.Models.pdb

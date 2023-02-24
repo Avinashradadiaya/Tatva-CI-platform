@@ -3320,6 +3320,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "CI-Platform.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3"
+        },
+        "compile": {
+          "bin/placeholder/CI-Platform.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CI-Platform.Models.dll": {}
+        }
       }
     }
   },
@@ -10203,10 +10216,16 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "CI-Platform.Models/1.0.0": {
+      "type": "project",
+      "path": "../CI-Platform.Models/CI-Platform.Models.csproj",
+      "msbuildProject": "../CI-Platform.Models/CI-Platform.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CI-Platform.Models >= 1.0.0",
       "Google.Protobuf >= 3.21.12",
       "Microsoft.Build.Framework >= 17.4.0",
       "Microsoft.EntityFrameworkCore >= 7.0.3",
@@ -10249,7 +10268,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-Platform.Models\\CI-Platform.Models.csproj": {
+              "projectPath": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-Platform.Models\\CI-Platform.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

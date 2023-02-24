@@ -1,0 +1,12 @@
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Repository\bin\Debug\net6.0\CI-Platform.Repository.deps.json
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Repository\bin\Debug\net6.0\CI-Platform.Repository.dll
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Repository\bin\Debug\net6.0\ref\CI-Platform.Repository.dll
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Repository\bin\Debug\net6.0\CI-Platform.Repository.pdb
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Repository\obj\Debug\net6.0\CI-Platform.Repository.csproj.AssemblyReference.cache
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Repository\obj\Debug\net6.0\CI-Platform.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Repository\obj\Debug\net6.0\CI-Platform.Repository.AssemblyInfoInputs.cache
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Repository\obj\Debug\net6.0\CI-Platform.Repository.AssemblyInfo.cs
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Repository\obj\Debug\net6.0\CI-Platform.Repository.csproj.CoreCompileInputs.cache
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Repository\obj\Debug\net6.0\CI-Platform.Repository.dll
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Repository\obj\Debug\net6.0\ref\CI-Platform.Repository.dll
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Repository\obj\Debug\net6.0\CI-Platform.Repository.pdb

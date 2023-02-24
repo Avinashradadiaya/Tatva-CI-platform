@@ -1,0 +1,14 @@
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Models\bin\Debug\net6.0\CI-Platform.Models.deps.json
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Models\bin\Debug\net6.0\CI-Platform.Models.runtimeconfig.json
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Models\bin\Debug\net6.0\CI-Platform.Models.dll
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Models\bin\Debug\net6.0\ref\CI-Platform.Models.dll
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Models\bin\Debug\net6.0\CI-Platform.Models.pdb
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Models\obj\Debug\net6.0\CI-Platform.Models.csproj.AssemblyReference.cache
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Models\obj\Debug\net6.0\CI-Platform.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Models\obj\Debug\net6.0\CI-Platform.Models.AssemblyInfoInputs.cache
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Models\obj\Debug\net6.0\CI-Platform.Models.AssemblyInfo.cs
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Models\obj\Debug\net6.0\CI-Platform.Models.csproj.CoreCompileInputs.cache
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Models\obj\Debug\net6.0\CI-Platform.Models.dll
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Models\obj\Debug\net6.0\ref\CI-Platform.Models.dll
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Models\obj\Debug\net6.0\CI-Platform.Models.pdb
+D:\Tatva-CI-platform\MVC\CI-Platform\CI-Platform.Models\obj\Debug\net6.0\CI-Platform.Models.genruntimeconfig.cache
