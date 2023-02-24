@@ -146,6 +146,7 @@
 /* Card list and Gride view    */
 .card {
   margin-bottom: 1rem;
+/*  row-gap:30px;*/
 }
 
 .list-view .row>[class*='col-'] {
@@ -180,6 +181,7 @@
   padding-right: 20px;
   margin-top: -12.5px;
   background-color: white;
+  z-index:1;
 }
 
 .Title-1 {
@@ -423,93 +425,16 @@
 
 
 /* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- VolunteeringMissionPage-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */
-*{
-  box-sizing: border-box;
+.missioncarousel .carousel-item img {
+    width: 100% !important;
+    height: 100% !important;
 }
-.page-wrap {
-  max-width: 800px;
-  margin: 0 auto;
+
+.missioncarousel .carousel-indicators {
+    margin: 0 !important;
+    margin-bottom: -20px !important;
 }
-.carousal{
-  max-height: 10px;
-}
-.slide-container, .thumb-container {
-  width: 100%;
-  overflow: auto;
-  scroll-snap-type: x mandatory;
-  margin-bottom: -15px;
-  display: flex;
-  padding: 0;
-}
-.slide-container li, .thumb-container li {
-  display: block;
-}
-.slide-container__wrap, .thumb-container__wrap {
-  overflow: hidden;
-}
-.slide-container {
-  scroll-padding: 10%;
-}
-.slide-container li {
-  flex: 0 0 90%;
-  padding: 0 10px;
-  position: relative;
-  scroll-snap-align: start;
-}
-.slide-container img {
-  display: block;
-  width: 100%;
-}
-.slide-container p {
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-  right: 10px;
-  margin: 0;
-  padding: 30px;
-  background: rgba(0, 0, 0, .5);
-  color: #fff;
-}
-.thumb-container__wrap {
-  display: none;
-}
-@media (min-width: 765px) {
-  .slide-container {
-    scroll-padding: 0;
- }
-  .slide-container li {
-    flex-basis: 100%;
-    padding: 0;
- }
-  .slide-container p {
-    right: 0;
-    left: 0;
- }
-  .thumb-container.scrolling {
-    scroll-snap-type: none;
- }
-  .thumb-container li {
-    flex: 0 0 33.3333333333%;
-    scroll-snap-align: center;
- }
-  .thumb-container a {
-    display: block;
-    width: 100%;
-    padding-top: 56.25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-origin: border-box;
-    overflow: hidden;
-    text-indent: -9999px;
-    border: 4px solid transparent;
-    transition: border-color 0.3s;
- }
-  .thumb-container__wrap {
-    position: relative;
-    display: flex;
- }
-}
+
 
 /* =========first-grid view ===================== */
 .Title-2 {
@@ -615,4 +540,140 @@
   color: black;
 }
 
+/**-***-*-***-*--*--*stories listing page -=-=-=-=-=--==--=--=-=-=---*/
+.story-img {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
 
+    .story-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 44% 32%;
+    }
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+}
+
+.story-img:hover .overlay {
+    background: rgba(0, 0, 0, .7);
+}
+
+.story-title {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    z-index: 1;
+    transition: bottom .5s ease;
+}
+
+.story-img:hover .story-title {
+    bottom: 100px;
+}
+
+.share-story-btn {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    opacity: 0;
+    /* background-color: #414141; */
+    transition: opacity 1s ease;
+}
+
+    .share-story-btn button {
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid white;
+        border-radius: 24px;
+        color: white;
+        height: fit-content;
+        width: fit-content;
+    }
+
+.story-img:hover .share-story-btn {
+    opacity: 1;
+}
+
+.story-volunteer-img {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.story-card-img-top {
+    width: 100%;
+    aspect-ratio: 2/1;
+}
+
+.grid-img:hover .overlay {
+    background: rgba(0, 0, 0, .7);
+}
+
+.grid-img:hover .share-story-btn {
+    opacity: 1;
+}
+
+
+.story-card-img{
+    position:relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+}
+
+.story-card-img:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .6);
+}
+
+.hover-button {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+    .hover-button button {
+        width: 200px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid white;
+        border-radius: 24px;
+        height: fit-content;
+        width: fit-content;
+        text-align: center;
+        color:white;
+       /* z-index: 1;*/
+    }
+
+.story-card-img:hover .hover-button {
+    opacity: 1;
+}
+.volunteer-seats-left {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
