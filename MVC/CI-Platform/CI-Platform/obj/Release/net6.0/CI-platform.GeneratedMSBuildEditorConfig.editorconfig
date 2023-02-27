@@ -15,40 +15,40 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Tatva-CI-platform\MVC\CI-Platform\CI-platform
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Home/Home.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Home/login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Home/Newpasswoard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZXdwYXNzd29hcmQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Home/Nomissionfound.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb21pc3Npb25mb3VuZC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Home/Registerform.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3RlcmZvcm0uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Home/StoriesListing.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdG9yaWVzTGlzdGluZy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Home/VolunteeringMissionPage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWb2x1bnRlZXJpbmdNaXNzaW9uUGFnZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/User/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/User/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxsb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/User/Newpasswoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxOZXdwYXNzd29hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/User/Nomissionfound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxOb21pc3Npb25mb3VuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/User/Registerform.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3RlcmZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/User/StoriesListing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTdG9yaWVzTGlzdGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/User/VolunteeringMissionPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWb2x1bnRlZXJpbmdNaXNzaW9uUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/_ViewImports.cshtml]

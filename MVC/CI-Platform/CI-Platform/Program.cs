@@ -1,19 +1,29 @@
 
+using CI_Platform.Models.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<CiPlatformDbContext>(option =>
+{
+    option.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection")
+        );
+});
 
- 
-var app = builder.Build();
+ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage();
+
+}
+else
+{
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -27,34 +37,6 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "",
     pattern: "{controller=Home}/{action=login}/{id?}");
-
-app.MapControllerRoute(
-    name: "",
-    pattern: "{controller=Home}/{action=Registerform}");
-
-app.MapControllerRoute(
-    name: "",
-    pattern: "{controller=Home}/{action=Forgotpasswoard}");
-
-app.MapControllerRoute(
-    name: "",
-    pattern: "{controller=Home}/{action=Newpasswoard}");
-app.MapControllerRoute(
-    name: "",
-    pattern: "{controller=Home}/{action=Home}");
-app.MapControllerRoute(
-    name: "",
-    pattern: "{controller=Home}/{action=Nomissionfound}");
-app.MapControllerRoute(
-    name: "",
-    pattern: "{controller=Home}/{action=VolunteeringMissionPage}");
-app.MapControllerRoute(
-    name: "",
-    pattern: "{controller=Home}/{action= StoriesListing}");
-
-
-
-
 
 
 app.Run();

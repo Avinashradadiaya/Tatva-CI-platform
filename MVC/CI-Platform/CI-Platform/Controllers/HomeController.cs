@@ -1,4 +1,5 @@
 ﻿using CI_platform.Models;
+using CI_Platform.Models.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,21 +7,30 @@ namespace CI_platform.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly CiPlatformDbContext _db;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(CiPlatformDbContext db)
         {
-            _logger = logger;
+            _db = db;
         }
 
         public IActionResult login()
         {
             return View();
         }
-
-        public IActionResult Forgotpasswoard()
+        [HttpPost]
+        public IActionResult login(User user)
         {
-            return View();
+            var data = _db.Users.Where(e => e.Email == user.Email && e.Password == user.Password).FirstOrDefault();
+
+            if(data == null)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Home");
+            }
         }
 
         public IActionResult Newpasswoard()
@@ -31,6 +41,19 @@ namespace CI_platform.Controllers
         public IActionResult Registerform()
         {
             return View();
+        }
+
+        //POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Registerform(User obj)
+        {
+
+            _db.Users.Add(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Login");
+
+
         }
 
         public IActionResult Home()

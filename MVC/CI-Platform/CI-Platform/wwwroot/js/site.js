@@ -39,7 +39,7 @@ const AddComment = () => {
 
     x.innerHTML = ` <div id="comment-desc" class="bg-white mb-3">
     <div class="row">
-        <div class="col-md-1"><img  class="volunteer-img p-3" src="images/volunteer4.png" alt=""></div>
+        <div class="col-md-1"><img  class="volunteer-img p-3" src="~/images/volunteer4.png" alt=""></div>
         <div class="col-md-11">
             <h4>Estella Fowles</h4>
             <p id="current-time">${Date()}</p>

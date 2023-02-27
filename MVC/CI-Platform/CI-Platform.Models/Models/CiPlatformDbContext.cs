@@ -4,15 +4,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CI_Platform.Models.Models;
 
-public partial class CiPlatformContext : DbContext
+public partial class CiPlatformDbContext : DbContext
 {
-    public CiPlatformContext()
+    public CiPlatformDbContext()
     {
     }
 
-    public CiPlatformContext(DbContextOptions<CiPlatformContext> options)
-        : base(options)
+    public CiPlatformDbContext(DbContextOptions<CiPlatformDbContext> options) : base(options)
     {
+
     }
 
     public virtual DbSet<Admin> Admins { get; set; }
@@ -28,6 +28,7 @@ public partial class CiPlatformContext : DbContext
     public virtual DbSet<Country> Countries { get; set; }
 
     public virtual DbSet<FavoriteMission> FavoriteMissions { get; set; }
+
 
     public virtual DbSet<GoalMission> GoalMissions { get; set; }
 
@@ -64,8 +65,9 @@ public partial class CiPlatformContext : DbContext
     public virtual DbSet<UserSkill> UserSkills { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=PCE53\\SQL2017;Database=CI-Platform;Persist Security Info=False;User ID=sa;Password=tatva123;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False;Connection Timeout=30;");
+    {
+        optionsBuilder.UseSqlServer("Server=PCE53\\SQL2017;Database=CI-Platform;Persist Security Info=False;User ID=sa;Password=tatva123;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False;Connection Timeout=30;");
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

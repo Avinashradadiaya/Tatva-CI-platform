@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace CI_Platform.Models.Models;
 
 public partial class User
-{
+{   [key]
     public long UserId { get; set; }
 
     public string? FirstName { get; set; }
-
+   
     public string? LastName { get; set; }
-
+ 
     public string Email { get; set; } = null!;
 
     public string Password { get; set; } = null!;
@@ -25,9 +26,9 @@ public partial class User
 
     public string? Department { get; set; }
 
-    public long CityId { get; set; }
+    public long? CityId { get; set; }
 
-    public long CountryId { get; set; }
+    public long? CountryId { get; set; }
 
     public string? ProfileText { get; set; }
 
@@ -42,11 +43,11 @@ public partial class User
     public DateTime? UpdatedAt { get; set; }
 
     public DateTime? DeletedAt { get; set; }
-
+    [Required]
     public virtual City City { get; set; } = null!;
 
     public virtual ICollection<Comment> Comments { get; } = new List<Comment>();
-
+    [Required]
     public virtual Country Country { get; set; } = null!;
 
     public virtual ICollection<FavoriteMission> FavoriteMissions { get; } = new List<FavoriteMission>();
