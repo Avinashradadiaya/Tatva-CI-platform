@@ -5,7 +5,10 @@ using System.ComponentModel.DataAnnotations;
 namespace CI_Platform.Models.Models;
 
 public partial class User
-{   [key]
+{
+    public readonly object LostPasswordModel;
+
+    [key]
     public long UserId { get; set; }
 
     public string? FirstName { get; set; }
@@ -65,4 +68,5 @@ public partial class User
     public virtual ICollection<Timesheet> Timesheets { get; } = new List<Timesheet>();
 
     public virtual ICollection<UserSkill> UserSkills { get; } = new List<UserSkill>();
+
 }

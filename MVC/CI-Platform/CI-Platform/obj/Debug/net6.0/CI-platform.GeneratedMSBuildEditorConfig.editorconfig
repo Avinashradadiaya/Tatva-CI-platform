@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Tatva-CI-platform\MVC\CI-Platform\CI-platform
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Home/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Home/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -23,16 +27,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Home/Newpasswoard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZXdwYXNzd29hcmQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Home/Nomissionfound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb21pc3Npb25mb3VuZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Home/Registerform.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3RlcmZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Home/Resetpassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXNldHBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Tatva-CI-platform/MVC/CI-Platform/CI-platform/Views/Home/StoriesListing.cshtml]

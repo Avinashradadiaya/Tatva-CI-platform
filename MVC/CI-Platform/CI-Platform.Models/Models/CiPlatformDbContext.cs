@@ -6,6 +6,8 @@ namespace CI_Platform.Models.Models;
 
 public partial class CiPlatformDbContext : DbContext
 {
+    public object Configuration;
+
     public CiPlatformDbContext()
     {
     }

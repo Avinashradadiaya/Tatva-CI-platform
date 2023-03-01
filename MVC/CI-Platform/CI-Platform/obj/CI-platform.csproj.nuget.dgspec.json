@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\CI-platform.csproj": {}
+    "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\CI-Platform.csproj": {}
   },
   "projects": {
-    "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-Platform.Models\\CI-Platform.Models.csproj": {
+    "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-Platform.Models\\CI_Platform.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-Platform.Models\\CI-Platform.Models.csproj",
-        "projectName": "CI-Platform.Models",
-        "projectPath": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-Platform.Models\\CI-Platform.Models.csproj",
+        "projectUniqueName": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-Platform.Models\\CI_Platform.Models.csproj",
+        "projectName": "CI_Platform.Models",
+        "projectPath": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-Platform.Models\\CI_Platform.Models.csproj",
         "packagesPath": "C:\\Users\\pce53\\.nuget\\packages\\",
         "outputPath": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-Platform.Models\\obj\\",
         "projectStyle": "PackageReference",
@@ -75,12 +75,12 @@
         }
       }
     },
-    "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\CI-platform.csproj": {
+    "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\CI-Platform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\CI-platform.csproj",
-        "projectName": "CI-platform",
-        "projectPath": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\CI-platform.csproj",
+        "projectUniqueName": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\CI-Platform.csproj",
+        "projectName": "CI-Platform",
+        "projectPath": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\CI-Platform.csproj",
         "packagesPath": "C:\\Users\\pce53\\.nuget\\packages\\",
         "outputPath": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-platform\\obj\\",
         "projectStyle": "PackageReference",
@@ -104,8 +104,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-Platform.Models\\CI-Platform.Models.csproj": {
-                "projectPath": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-Platform.Models\\CI-Platform.Models.csproj"
+              "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-Platform.Models\\CI_Platform.Models.csproj": {
+                "projectPath": "D:\\Tatva-CI-platform\\MVC\\CI-Platform\\CI-Platform.Models\\CI_Platform.Models.csproj"
               }
             }
           }
