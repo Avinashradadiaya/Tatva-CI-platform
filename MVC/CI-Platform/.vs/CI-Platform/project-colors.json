@@ -8,7 +8,7 @@
     },
     "68b76afc-86e7-408e-b7cb-b07713bb2eba": {
       "ProjectGuid": "68b76afc-86e7-408e-b7cb-b07713bb2eba",
-      "DisplayName": "CI_Platform.Models",
+      "DisplayName": "CI_Platform.Entities",
       "ColorIndex": 1
     },
     "e65e6a5c-8f41-4d68-97d2-3975b90c9877": {
@@ -20,7 +20,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "f377f7c1-833a-4775-b759-485ac2b9825c": {
+      "ProjectGuid": "f377f7c1-833a-4775-b759-485ac2b9825c",
+      "DisplayName": "Models",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

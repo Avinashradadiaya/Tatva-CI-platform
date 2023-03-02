@@ -21,7 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CI-Platform.Models\CI_Platform.Models.csproj" />
+    <ProjectReference Include="..\CI-Platform.Repository\CI-Platform.Repository.csproj" />
+    <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
 
 </Project>
